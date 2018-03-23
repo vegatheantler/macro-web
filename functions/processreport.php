@@ -1,4 +1,6 @@
 <?php
+
+if (isset($_POST['submit']) && $_SERVER['REQUEST_METHOD'] == 'POST'){
 require ('../includes/dbconnect.php');
 
 
@@ -94,15 +96,15 @@ for ($i=0 ; $i<=$evidenceUploadedQuantity ; $i++){
 	$new_target_file = $target_dir . $new_file_name;
 	}while (file_exists($new_target_file));
 	// Check file size
-	if ($_FILES[$fileStr]["size"][$i] > 2000000) {
+	if ($_FILES[$fileStr]["size"][$i] > 20000000) {
 		echo "Sorry, your file is too large.";
 		$uploadOk = 0;
 		continue;
 	}
 	// Allow certain file formats
 	if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-	&& $imageFileType != "gif" ) {
-		echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+	&& $imageFileType != "gif" && $imageFileType != "mp3" && $imageFileType != "mp4") {
+		echo "Sorry, only MP3, MP4, JPG, JPEG, PNG & GIF files are allowed.";
 		$uploadOk = 0;
 		continue;
 	}
@@ -304,6 +306,7 @@ if (!mysqli_query($conn, $sql5)) {
 }
 }
 */
+
 ?>
  <link href="css/process.css" rel="stylesheet">
 <div style="width=500px; height=500px;border=2px solid black;">
@@ -313,5 +316,10 @@ if (!mysqli_query($conn, $sql5)) {
 echo "Reference ID: " .$referenceID . "<br>Password: " . $refpassword ;
 
 */
+$_POST = array();
+}
+else {
+	header('Location: /index.php');
+}
 ?>
 </div>

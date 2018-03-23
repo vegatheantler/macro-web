@@ -209,21 +209,32 @@ function checkFields(fields){
 	}
 	return 1;
 }*/
+
+function imNotARobot() {
+    jQuery('#finalize').trigger('propertychange');
+  	};
+
 $(document).ready(function () {
+
+	
 
 	$('#genNext').attr('disabled','disabled');
 	$('#submitForm').attr('disabled','disabled');
 
 
-     jQuery('.general-info').on('input propertychange paste', function(){
+     jQuery('.general-info').on('input propertychange paste click', function(){
 		 var fields = [ 'description', 'typeOfOffense', 'dateTimeOfOffense' ,'cityOfOffense'];
 		 var bttn = "genNext";
 		 checkFields(fields,bttn);
      });
      jQuery('#finalize').on('input propertychange paste', function(){
-		 var fields = ['password'];
+		 var responseCaptcha = grecaptcha.getResponse();
+		 var fields = ['password','agreement'];
 		 var bttn = "submitForm";
-		 checkFields(fields,bttn);
+		 if (responseCaptcha != 0){
+			//$('#submitForm').prop('disabled',false);
+		 	checkFields(fields,bttn);
+		}
      });
 
 
