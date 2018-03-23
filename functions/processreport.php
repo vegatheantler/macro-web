@@ -155,64 +155,7 @@ Be sure to login at www.xxx.com to provide any additional information to this ti
 }
 
 
-/************* functions ********************************/
 
-function generateRandomString($length) {
-    return substr(str_shuffle(str_repeat($x='0123456789abcdefghijklmnopqrstuvwxyz', ceil($length/strlen($x)) )),1,$length);
-}
-
-
-function processSqlString($fields,$quantity,$last_id_temp,$tableName){
-	$sql_str_temp = "";
-	$columns_str = "";
-	$values_str =  "";
-
-	if ($tableName=='reports'){
-		foreach ($fields as $field) {
-			if (isset($_POST[$field]) && $_POST[$field]!="") {
-				$$field = $_POST[$field];
-				$values_str .= "'" . $$field. "',";
-				$columns_str .= "$field,";
-			}
-		}
-		$columns_str = substr($columns_str, 0, -1);
-		$values_str = substr($values_str, 0, -1);
-		$sql_str_temp .= " INSERT INTO " .  $tableName . " (" . $columns_str . ") VALUES (" . $values_str . "); ";
-	} else {
-		for ($i=0 ; $i<=$quantity ; $i++){
-			foreach ($fields as $field) {
-				if ((is_array($_POST[$field])) && isset($_POST[$field][$i])) {
-					$$field = $_POST[$field][$i];
-					$values_str .= " '". $$field. "' ,";
-					$columns_str .= " `".$field."`,";
-				} elseif (isset($_POST[$field])){
-					$$field = $_POST[$field];
-					$values_str .= " '". $$field. "' ,";
-					$columns_str .= " `".$field."`,";
-				}
-			}
-			$columns_str = substr($columns_str, 0, -1);
-			$values_str = substr($values_str, 0, -1);
-			$sql_str_temp .= " INSERT INTO `" .  $tableName . "` (`reportID`," . $columns_str . ") VALUES ( " . $last_id_temp . " ," . $values_str . ");";
-			$columns_str = "";
-			$values_str =  "";
-		}
-	}
-	return $sql_str_temp;
-}
-
-function get_client_ip() {
-    $ip = getenv('HTTP_CLIENT_IP')?:
-getenv('HTTP_X_FORWARDED_FOR')?:
-getenv('HTTP_X_FORWARDED')?:
-getenv('HTTP_FORWARDED_FOR')?:
-getenv('HTTP_FORWARDED')?:
-getenv('REMOTE_ADDR');
-    return $ip;
-}
-
-
-/**********************functions end *********************/
 ?>
 
 
@@ -321,5 +264,65 @@ $_POST = array();
 else {
 	header('Location: /index.php');
 }
+
+/************* functions ********************************/
+
+function generateRandomString($length) {
+    return substr(str_shuffle(str_repeat($x='0123456789abcdefghijklmnopqrstuvwxyz', ceil($length/strlen($x)) )),1,$length);
+}
+
+
+function processSqlString($fields,$quantity,$last_id_temp,$tableName){
+	$sql_str_temp = "";
+	$columns_str = "";
+	$values_str =  "";
+
+	if ($tableName=='reports'){
+		foreach ($fields as $field) {
+			if (isset($_POST[$field]) && $_POST[$field]!="") {
+				$$field = $_POST[$field];
+				$values_str .= "'" . $$field. "',";
+				$columns_str .= "$field,";
+			}
+		}
+		$columns_str = substr($columns_str, 0, -1);
+		$values_str = substr($values_str, 0, -1);
+		$sql_str_temp .= " INSERT INTO " .  $tableName . " (" . $columns_str . ") VALUES (" . $values_str . "); ";
+	} else {
+		for ($i=0 ; $i<=$quantity ; $i++){
+			foreach ($fields as $field) {
+				if ((is_array($_POST[$field])) && isset($_POST[$field][$i])) {
+					$$field = $_POST[$field][$i];
+					$values_str .= " '". $$field. "' ,";
+					$columns_str .= " `".$field."`,";
+				} elseif (isset($_POST[$field])){
+					$$field = $_POST[$field];
+					$values_str .= " '". $$field. "' ,";
+					$columns_str .= " `".$field."`,";
+				}
+			}
+			$columns_str = substr($columns_str, 0, -1);
+			$values_str = substr($values_str, 0, -1);
+			$sql_str_temp .= " INSERT INTO `" .  $tableName . "` (`reportID`," . $columns_str . ") VALUES ( " . $last_id_temp . " ," . $values_str . ");";
+			$columns_str = "";
+			$values_str =  "";
+		}
+	}
+	return $sql_str_temp;
+}
+
+function get_client_ip() {
+    $ip = getenv('HTTP_CLIENT_IP')?:
+getenv('HTTP_X_FORWARDED_FOR')?:
+getenv('HTTP_X_FORWARDED')?:
+getenv('HTTP_FORWARDED_FOR')?:
+getenv('HTTP_FORWARDED')?:
+getenv('REMOTE_ADDR');
+    return $ip;
+}
+
+
+/**********************functions end *********************/
+
 ?>
 </div>

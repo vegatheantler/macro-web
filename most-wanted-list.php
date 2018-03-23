@@ -11,7 +11,7 @@ if ($page == '' || $page == 1) {
   $page1 = ($page*10)-10;
 }
 
-  $sql = 'SELECT * FROM wanted ORDER BY wantedID ASC LIMIT '.$page1.',12';
+  $sql = 'SELECT * FROM wanted ORDER BY wantedID DESC LIMIT '.$page1.',12';
   $data = $conn->query($sql);
 
   //print_r($data->fetch_all());
@@ -54,7 +54,7 @@ if ($page == '' || $page == 1) {
               <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 animated flipInX" id="lobo1">
                 <form class="form" method="POST" action="multistep.php">
 
-                <a href="most-wanted-details.php?wantedID=<?php echo $row["wantedID"];?>"><img class="lazyload" style="width: 200px; height: 100px;border-radius: 5px;" data-src="wantedImages/<?php echo $row["wantedID"];?>.jpg" />
+                <a href="most-wanted-details.php?wantedID=<?php echo $row["wantedID"];?>"><img class="lazyload" style="width: 200px; height: 100px;border-radius: 5px;" data-src="wantedImages/<?php echo $row["lastName"];?>.jpg" />
                 <h4><?php echo ucfirst($row["firstName"]);?> <?php echo ucfirst($row["lastName"]);?></h4></a>
                   <dl class="tags">
                     <dt>Crime location:</dt>
