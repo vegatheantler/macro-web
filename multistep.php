@@ -128,7 +128,7 @@ if (isset($_POST['wantedID']) && isset($_POST['wantedName'])){
 									<hr>
 									<input type="text" name="carMake[]" class="col-xs-12 col-sm-6 col-md-4" placeholder="Make/Brand" />
 									<input type="text" name="carModel[]" class="col-xs-12 col-sm-6 col-md-4" placeholder="Model" />
-									<input type="text" name="carYear[]" class="col-xs-12 col-sm-12 col-md-4" placeholder="Year" />
+									<input type="number" min="1900" max="2018" step="1" value="2018" name="carYear[]" class="col-xs-12 col-sm-12 col-md-4" placeholder="Year" />
 									<input type="text" name="carColor[]" class="col-xs-12 col-sm-6 col-md-6" placeholder="Color" />
 									<input type="text" name="carPlate[]" class="col-xs-12 col-sm-6 col-md-6" placeholder="Plate Number" />
 									<textarea rows="5" name="carDesc[]" class="col-xs-12" placeholder="Description (any identifying marks, bumper stickers, company logos, etc.)"></textarea>
@@ -170,7 +170,7 @@ if (isset($_POST['wantedID']) && isset($_POST['wantedName'])){
 									<input type="text" name="infStreetAddress[]" class="col-xs-12 col-sm-6 col-md-6" placeholder="Street Address" />
 									<input type="text" name="infBarangay[]" class="col-xs-12 col-sm-6 col-md-6" placeholder="Barangay" />
 									<input type="text" name="infNumber[]" class="col-xs-12 col-sm-6 col-md-6" placeholder="Contact Phone" />
-									<input type="text" name="infEmail[]" class="col-xs-12 col-sm-6 col-md-6" placeholder="E-mail Address" />
+									<input type="email" name="infEmail[]" class="col-xs-12 col-sm-6 col-md-6" placeholder="E-mail Address" />
 									<input type="button" name="previous" class="previous action-button" value="Previous" />
 									<input type="button" name="next" class="next action-button" value="Next" />
 								</fieldset>
