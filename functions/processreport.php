@@ -260,6 +260,7 @@ echo "Reference ID: " .$referenceID . "<br>Password: " . $refpassword ;
 
 */
 $_POST = array();
+header("Location: reportsent.php?referenceID=$referenceID&referencePassword=$refpassword");
 }
 else {
 	header('Location: /index.php');
