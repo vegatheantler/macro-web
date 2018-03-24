@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <title></title>
+    <title>MACRO | REPORT SUCCESS</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Faster One">

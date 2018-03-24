@@ -43,7 +43,7 @@
         mysqli_query($conn,$sql);
         $fileDestination = '../uploads/'.$fileNameNew;
         move_uploaded_file($fileTmpName,$fileDestination);
-        header("Location: ../functions/updateWantedFuncSuccess.php");
+        header("Location: ../functions/updateUnsolvedFuncSuccess.php");
       }else {
         echo "Your file is too big! ";
       }
@@ -51,6 +51,6 @@
       echo "There was an error uploading your file!";
     }
   }else {
-    echo "PLEASE UPLOAD ONLY IMAGES! THANKS YOU!";
+    echo "Please upload images only!";
   }
 }

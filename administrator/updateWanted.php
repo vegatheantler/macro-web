@@ -74,14 +74,6 @@
       </div>
 
     </div>
-
-
-
-
-
-
-
-
     <script language="javascript" type="text/javascript">
       document.oncontextmenu=RightMouseDown;
       document.onmousedown = mouseDown;

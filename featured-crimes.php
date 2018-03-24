@@ -40,7 +40,7 @@ if ($result->num_rows > 0) {
     <div class="row">
         <div class="col-xs-12" id="ucContainer">
             <h4 class="animated fadeIn">PUBLISHED DATE: <?php echo $row["created_at"]; ?></h4><br>
-            <img id="unsolved-img" class="animated bounceIn" src="unsolvedImages/<?php echo $row["imagename"]; ?>.jpg">
+            <img id="unsolved-img" class="animated bounceIn" src="unsolvedImages/<?php echo $row["imagename"]; ?>">
             <h1 id="ctitle" style="text-transform: uppercase;" class="animated fadeIn"><?php echo $row["title"]; ?></h1>
             <h4 class="animated fadeIn">CASE# <?php echo $row["casenumber"]; ?></h4>
             <p class="animated fadeIn"><?php echo $row["description"] ?></p>

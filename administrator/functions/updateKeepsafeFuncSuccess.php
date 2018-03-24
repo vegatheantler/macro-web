@@ -446,7 +446,7 @@ width: 90px;
     <!-- Redirection Counter -->
 <script type="text/javascript">
   var count = 10; // Timer
-  var redirect = "../updateKeepsafe.php"; // Target URL
+  var redirect = "../updateWanted.php"; // Target URL
 
   function countDown() {
     var timer = document.getElementById("timer"); // Timer ID
@@ -469,7 +469,7 @@ width: 90px;
     </div>
 
     <div class="notice animated fadeInUp">
-      <p class="lead">A feature crime has been successfuly updated!</p>
+      <p class="lead">A Keep Safe has been successfuly updated!</p>
       <a class="btn animation" href="../updateKeepsafe.php">&larr; Back</a>
     </div>
 
@@ -479,7 +479,7 @@ width: 90px;
           countDown();
         </script>
       </p>
-      <p class="copyright">&copy; MACRO PH</p>
+      <p class="copyright">&copy; MACRO</p>
     </div>
 
   </div>
