@@ -1,8 +1,8 @@
-<?php 
+<?php
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-$reportID = $_SESSION['reportID'];
+$reportID = 53;
 
 
 require_once '../includes/dbconnect.php';
@@ -20,10 +20,10 @@ require_once '../includes/dbconnect.php';
 			} else {
 				$user =  "<span style='color:green;font-weight:700;'>Client</span>";
 			}
-			
+
 			$formattedTime = "<sup style='color:gray;font-size:50%;'>" . $extract['date_sent'] . "</sup>";
-			echo  $user . " : " . $extract['message'] . " ".  $formattedTime . "<br /><hr>" ; 
+			echo  $user . " : " . $extract['message'] . " ".  $formattedTime . "<br /><hr>" ;
 		}
 	}
 
-?>﻿	
+?>﻿
