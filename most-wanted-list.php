@@ -21,7 +21,7 @@ if ($page == '' || $page == 1) {
 <html>
 <head>
    <link rel="icon" href="images/macrofavico.ico">
-  <title>MARO | MOST WANTED</title>
+  <title>MARCO | MOST WANTED</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">

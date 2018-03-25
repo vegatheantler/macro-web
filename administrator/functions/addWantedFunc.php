@@ -42,14 +42,41 @@
         mysqli_query($conn,$sql);
         $fileDestination = '../uploads/'.$fileNameNew;
         move_uploaded_file($fileTmpName,$fileDestination);
-        header("Location: ../addWanted.php");
+        header("Location: ../functions/addWantedFuncSuccess.php");
       }else {
         echo "Your file is too big! ";
+        ?>
+        <br>
+        <button onclick="goBack()">Go Back</button>
+        <script>
+        function goBack() {
+        window.history.back();
+        }
+        </script>
+        <?php
       }
     } else {
       echo "There was an error uploading your file!";
+      ?>
+      <br>
+      <button onclick="goBack()">Go Back</button>
+      <script>
+      function goBack() {
+      window.history.back();
+      }
+      </script>
+      <?php
     }
   }else {
     echo "PLEASE UPLOAD ONLY IMAGES! THANKS YOU!";
+    ?>
+    <br>
+    <button onclick="goBack()">Go Back</button>
+    <script>
+    function goBack() {
+    window.history.back();
+    }
+    </script>
+    <?php
   }
 }

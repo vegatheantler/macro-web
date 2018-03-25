@@ -16,7 +16,7 @@
          ?>
       <div class="container" id="main">
          <div class="row" id="welcome">
-            <div  class="col-md-8 col-sm-8 leftside animated fadeInLeft">
+            <div  class="col-md-8 col-sm-8 leftside animated fadeInLeft" id="macro00">
                <br><br><br><br>
                <div class="leftside jumbotron well" id="chatbox">
                   <?php if ($_SESSION['loggedIn']) {

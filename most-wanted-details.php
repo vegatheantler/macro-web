@@ -39,7 +39,7 @@ $wantedID = mysqli_real_escape_string($conn,$_GET['wantedID']);
  $wd = 'warrantDate';
 ?>
 <ol class="breadcrumb">
-  <li><a href="/manila-anonymous-crime-reporting-online">MACRO</a></li>
+  <li><a href="index.php">MACRO</a></li>
   <li><a href="most-wanted-list.php">LIST WANTED</a></li>
   <li class="active">WANTED DETAILS</li>
 </ol>

@@ -10,7 +10,7 @@
     <title></title>
   </head>
   <body>
-    <form action="functions/addWanted.php" method="POST" enctype="multipart/form-data"><br>
+    <form action="functions/addWantedFunc.php" method="POST" enctype="multipart/form-data"><br>
     <div class="container">
       <div class="row">
         <div class="col-xs-5"><input type="text" class="form-control"  name="fname" placeholder="First Name" required></div>

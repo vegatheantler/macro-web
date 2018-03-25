@@ -9,26 +9,12 @@
 			<div class="container">
 				<form method="GET">
 					<h4 class="form-signin-heading">Get started!</h4>Make a new report, tell us your story or hear from us. <p></p>
-					
+
 					<div class="row col-sm-12" id="hbtnrow">
-                           <!--<div class=" animated ">
-                              <a href="#">
-                              <button type="button" class=" btn btn-default hbtn"><span class="fa fa-camera"></span> <br>Camera</button>
-                              </a>
-                           </div>
-                           <div class=" animated ">
-                              <a href="#">
-                              <button type="button"  class="btn btn-default hbtn"><span class="fa fa-microphone"></span><br>Voice</button>
-                              </a>
-                           </div>
-                           <div class=" animated ">
-                              <a href="#">
-                              <button type="button"  class=" btn btn-default hbtn"><span class="fa fa-pencil"></span><br>Letter</button>
-                              </a>
-                           </div>-->
+                           <button type="button" class="btn btn-primary btn-lg" style="width:100%;background: white;color: #2F354F;border-color:#2F354F;border-width: 1.5px;"><b><span class="glyphicon glyphicon-envelope"> Reporting Forms</b></span></button>
                         </div>
-					
-					
+
+
 				</form>
 			</div>
 		  </div>

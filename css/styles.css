@@ -53,6 +53,15 @@ position: absolute;
    .navbar{
     background-color: #2F354F;
     border-radius: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+   }
+   #macro00{
+     z-index: -1;
+   }
+   #macro001{
+     color: white;
    }
 
 @media screen and (min-width:768px){

@@ -31,6 +31,11 @@ if(isset($_POST['submit-search'])){
 		<link rel="stylesheet" type="text/css" href="css/newwanted.css">
 		<link rel="stylesheet" type="text/css" href="css/search.css">
 		<link rel="stylesheet" type="text/css" href="css/navbar.css">
+		<style media="screen">
+			#searchlink{
+				display: none;
+			}
+		</style>
 	</head>
 	<body>
 		<?php require 'navbar.html' ?>
@@ -40,7 +45,7 @@ if(isset($_POST['submit-search'])){
 					<div class="col-xs-12">
 						<h2 id="found"><?php echo $fullResult ?>  MACRO found for   <span class="glyphicon glyphicon-arrow-down"></span></h2>
 						<form action="search.php" method="POST">
-							<input id="inputSearch"placeholder="Search......" value="<?php echo $search ?>" name="search-big">
+							<input id="inputSearch"placeholder="Search......" value="<?php echo $search ?>" name="search-big" required>
 							<input type="hidden" name="submit-search">
 						</form>
 					</div>
