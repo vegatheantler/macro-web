@@ -19,6 +19,7 @@ if (isset($_POST['wantedID']) && isset($_POST['wantedName'])){
 <!DOCTYPE html>
 <html>
 <head>
+    <title>MACRO PH | REPORT FORMS</title>
 <link href="css/multistep.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext">
