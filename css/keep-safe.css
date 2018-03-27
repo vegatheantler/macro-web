@@ -16,10 +16,9 @@ body {font-family: "Lato", sans-serif;}
     position: fixed;
     z-index: 1;
     display: none;
-    top:50px;
+    top:50px;}
     ::-webkit-scrollbar {
     width: 20px;
-}
 
 }
 
@@ -54,6 +53,7 @@ body {font-family: "Lato", sans-serif;}
     padding: 0px 12px;
     border: 1px solid #ccc;
     height: 100%;
+    width: 100%;
 
 }
 

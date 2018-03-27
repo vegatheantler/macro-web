@@ -469,8 +469,8 @@ width: 90px;
     </div>
 
     <div class="notice animated fadeInUp">
-      <p class="lead">A feature crime has been successfuly updated!</p>
-      <a class="btn animation" href="../updateKeepsafe.php">&larr; Back</a>
+      <p class="lead">A wanted personality has been successfuly updated!</p>
+      <a class="btn animation" href="../updateWanted.php">&larr; Back</a>
     </div>
 
     <div class="footer animated slow fadeInUp">

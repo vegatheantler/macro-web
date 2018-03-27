@@ -2,15 +2,23 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-$reportID = 53;
+if (isset($_GET['id'])){
+	$reportID = $_GET['id'];
+} else 
+	$reportID = $_SESSION['reportID'];
 $msg = $_REQUEST['msg'];
 
+$auth = 0;
+
+if (isset($_SESSION['isAdmin']) && $_SESSION['isAdmin'] == true){
+	$auth = 1;
+} 
 
 require_once '../includes/dbconnect.php';
 
 
 //$insert = ("INSERT INTO chatlogs (`reportID` , `message`, `isAdmin`) VALUES ('$reportID','$msg', `FALSE`)");
-$insert = "INSERT INTO chatlogs (`reportID` , `message`, `isAdmin`) VALUES ($reportID,'$msg', 1)";
+$insert = "INSERT INTO chatlogs (`reportID` , `message`, `isAdmin`) VALUES ($reportID,'$msg', $auth)";
 
 if (mysqli_query ($conn,$insert)){
 	if ($result1 = mysqli_query($conn, "SELECT * FROM chatlogs WHERE `reportID`=$reportID ORDER by chatID ASC")){

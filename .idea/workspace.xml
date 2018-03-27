@@ -2,11 +2,205 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="519ccc43-2460-4340-957b-90cc39bc813f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Xamarin/dbconnect.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/administrator/addUnsolved.php" afterPath="$PROJECT_DIR$/administrator/addUnsolved.php" />
+      <change beforePath="$PROJECT_DIR$/administrator/chat-admin.php" afterPath="$PROJECT_DIR$/administrator/chat-admin.php" />
+      <change beforePath="$PROJECT_DIR$/administrator/functions/addKeepsafeFunc.php" afterPath="$PROJECT_DIR$/administrator/functions/addKeepsafeFunc.php" />
+      <change beforePath="$PROJECT_DIR$/administrator/functions/addUnsolvedFunc.php" afterPath="$PROJECT_DIR$/administrator/functions/addUnsolvedFunc.php" />
+      <change beforePath="$PROJECT_DIR$/administrator/functions/updateUnsolvedFunc.php" afterPath="$PROJECT_DIR$/administrator/functions/updateUnsolvedFunc.php" />
+      <change beforePath="$PROJECT_DIR$/administrator/functions/updateUnsolvedFuncSuccess.php" afterPath="$PROJECT_DIR$/administrator/functions/updateUnsolvedFuncSuccess.php" />
+      <change beforePath="$PROJECT_DIR$/administrator/functions/updateWantedFunc.php" afterPath="$PROJECT_DIR$/administrator/functions/updateWantedFunc.php" />
+      <change beforePath="$PROJECT_DIR$/administrator/functions/updateWantedFuncSuccess.php" afterPath="$PROJECT_DIR$/administrator/functions/updateWantedFuncSuccess.php" />
+      <change beforePath="$PROJECT_DIR$/administrator/uploads/5ab5871106b8f8.18437936.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/administrator/uploads/5ab5875c54bad7.18430920.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/administrator/uploads/5ab5877a7d8057.42583751.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/administrator/uploads/5ab587a8731da9.70207233.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/administrator/uploads/5ab587d7b30e88.40367385.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/administrator/uploads/5ab5917308c385.06167086.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/administrator/uploads/5ab591d1548be5.90410544.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/administrator/uploads/5ab591e023bf78.50090484.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/administrator/uploads/5ab591fe795a72.86254084.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/administrator/uploads/5ab592657d9ce1.55558428.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/administrator/uploads/5ab592a44791f7.37081057.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/administrator/uploads/5ab592ce8da0f3.42621701.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/administrator/uploads/5ab592fdacd3d8.18891145.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/administrator/uploads/5ab5940719c849.36504570.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/administrator/uploads/5ab594e0971cf5.32032739.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/administrator/uploads/5ab5fa8bc9a196.56111871.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/administrator/uploads/5ab5facb2afbf5.24922638.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/administrator/uploads/5ab5fb5142e9e0.37719436.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/administrator/uploads/5ab5fb87bcc536.97544586.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/administrator/uploads/5ab5fbe9d45443.44263445.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/administrator/uploads/5ab5fc41603a28.67290814.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/administrator/uploads/5ab5fcb89d00c7.42004486.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/administrator/uploads/5ab72c19ba3774.94669662.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/administrator/uploads/5ab7e42fd4d3f2.86768636.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chat/insert.php" afterPath="$PROJECT_DIR$/chat/insert.php" />
+      <change beforePath="$PROJECT_DIR$/chat/logs.php" afterPath="$PROJECT_DIR$/chat/logs.php" />
+      <change beforePath="$PROJECT_DIR$/css/keep-safe.css" afterPath="$PROJECT_DIR$/css/keep-safe.css" />
       <change beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
-      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change beforePath="$PROJECT_DIR$/indexheader.html" afterPath="$PROJECT_DIR$/indexheader.html" />
+      <change beforePath="$PROJECT_DIR$/js/multistep.js" afterPath="$PROJECT_DIR$/js/multistep.js" />
+      <change beforePath="$PROJECT_DIR$/keep-safe.php" afterPath="$PROJECT_DIR$/keep-safe.php" />
+      <change beforePath="$PROJECT_DIR$/keepsafeImages/5ab67a8c9473d9.81532385.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/keepsafeImages/5ab67b1a9c78c1.36841210.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/keepsafeImages/5ab67e65d97906.80430079.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/keepsafeImages/5ab6833d19e8b6.03845377.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/keepsafeImages/5ab68915231994.93336505.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/keepsafeImages/5ab689836eaab5.97350395.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/keepsafeImages/5ab689f4568d05.37001660.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/keepsafeImages/5ab68a06dbf6e7.02017732.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/.env.example" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/.gitattributes" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/.idea/manytomany.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/.idea/php.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/app/Console/Commands/Inspire.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/app/Console/Kernel.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/app/Events/Event.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/app/Exceptions/Handler.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/app/Http/Controllers/Auth/AuthController.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/app/Http/Controllers/Auth/PasswordController.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/app/Http/Controllers/Controller.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/app/Http/Kernel.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/app/Http/Middleware/Authenticate.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/app/Http/Middleware/EncryptCookies.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/app/Http/Middleware/RedirectIfAuthenticated.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/app/Http/Middleware/VerifyCsrfToken.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/app/Http/Requests/Request.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/app/Http/routes.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/app/Jobs/Job.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/app/Listeners/.gitkeep" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/app/Policies/.gitkeep" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/app/Providers/AppServiceProvider.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/app/Providers/AuthServiceProvider.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/app/Providers/EventServiceProvider.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/app/Providers/RouteServiceProvider.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/app/Role.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/app/User.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/artisan" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/bootstrap/app.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/bootstrap/autoload.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/bootstrap/cache/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/composer.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/composer.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/config/app.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/config/auth.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/config/broadcasting.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/config/cache.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/config/compile.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/config/database.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/config/filesystems.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/config/mail.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/config/queue.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/config/services.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/config/session.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/config/view.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/database/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/database/factories/ModelFactory.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/database/migrations/.gitkeep" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/database/migrations/2018_01_24_061118_create_roles_table.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/database/migrations/2018_01_24_061321_create_role_user_table.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/database/seeds/.gitkeep" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/database/seeds/DatabaseSeeder.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/gulpfile.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/package.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/phpunit.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/public/.htaccess" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/public/favicon.ico" afterPath="$PROJECT_DIR$/keepsafeImages/index.php" />
+      <change beforePath="$PROJECT_DIR$/manytomany/public/index.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/public/robots.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/public/web.config" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/readme.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/resources/assets/sass/app.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/resources/lang/en/auth.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/resources/lang/en/pagination.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/resources/lang/en/passwords.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/resources/lang/en/validation.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/resources/views/errors/503.blade.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/resources/views/vendor/.gitkeep" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/resources/views/welcome.blade.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/server.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/storage/app/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/storage/app/public/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/storage/framework/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/storage/framework/cache/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/storage/framework/sessions/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/storage/framework/views/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/storage/logs/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/tests/ExampleTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/manytomany/tests/TestCase.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/multistep.php" afterPath="$PROJECT_DIR$/multistep.php" />
+      <change beforePath="$PROJECT_DIR$/responsive-reporting.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/unsolvedImages/1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/unsolvedImages/2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/unsolvedImages/3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/unsolvedImages/4.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/unsolvedImages/5.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/unsolvedImages/5ab670dc432841.20903207.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/unsolvedImages/5ab67133e3c062.87133826.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/unsolvedImages/5ab674b2773028.90266695.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/unsolvedImages/5ab72b62019294.16275913.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/unsolvedImages/asdasd.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/10.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/11.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/12.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/13.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/14.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/15.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/16.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/17.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/18.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/19.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/20.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/21.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/22.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/23.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/24.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/25.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/26.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/27.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/28.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/29.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/30.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/31.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/32.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/33.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/34.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/35.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/36.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/37.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/38.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/39.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/4.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/40.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/41.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/42.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/43.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/44.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/45.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/46.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/47.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/48.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/49.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/5.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/50.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/6.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/7.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/8.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/9.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/GRACE.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/alsdjaskldj.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wantedImages/aslkdjalskdj.jpg" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,41 +214,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="multistep.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/multistep.php">
+      <file leaf-file-name="updateWantedFuncSuccess.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/administrator/functions/updateWantedFuncSuccess.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="56" column="39" lean-forward="false" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+            <state relative-caret-position="176">
+              <caret line="472" column="52" lean-forward="false" selection-start-line="472" selection-start-column="52" selection-end-line="472" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="indexheader.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/indexheader.html">
+      <file leaf-file-name="updateUnsolvedFunc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/administrator/functions/updateUnsolvedFunc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-593">
-              <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+            <state relative-caret-position="357">
+              <caret line="33" column="53" lean-forward="false" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
+              <folding>
+                <marker date="1522103875778" expanded="true" signature="801:971" ph="UPDATE `unsolved`... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="updateUnsolvedFuncSuccess.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/administrator/functions/updateUnsolvedFuncSuccess.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="412">
+              <caret line="472" column="49" lean-forward="false" selection-start-line="472" selection-start-column="49" selection-end-line="472" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="updateKeepsafeFuncSuccess.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/administrator/functions/updateKeepsafeFuncSuccess.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="213" column="38" lean-forward="false" selection-start-line="213" selection-start-column="38" selection-end-line="213" selection-end-column="38" />
+            <state relative-caret-position="-7581">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <file leaf-file-name="updateKeepsafeFunc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/administrator/functions/updateKeepsafeFunc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="60" column="15" lean-forward="false" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1522002105424" expanded="true" signature="759:895" ph="UPDATE `keepsafe`... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addWantedFuncSuccess.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/administrator/functions/addWantedFuncSuccess.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7695">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -62,16 +280,56 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>nex</find>
+      <find>genNext</find>
+      <find>search</find>
+      <find>unctions/processreport.php</find>
+      <find>chat</find>
+      <find>email</find>
+      <find>city</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="FrameworkCommandLineHistory">
+    <commandsHistory>
+      <command text="git status" />
+      <command text="git add ." />
+      <command text="git commit -m &quot;fixed the chat not clicking &quot;" />
+      <command text="git push -u origin master" />
+    </commandsHistory>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/multistep.php" />
         <option value="$PROJECT_DIR$/indexheader.html" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/functions/processreport.php" />
+        <option value="$PROJECT_DIR$/css/multistep.css" />
+        <option value="$PROJECT_DIR$/js/multistep.js" />
+        <option value="$PROJECT_DIR$/multistep.php" />
+        <option value="$PROJECT_DIR$/administrator/functions/addKeepsafeFunc.php" />
+        <option value="$PROJECT_DIR$/administrator/addKeepsafe.php" />
+        <option value="$PROJECT_DIR$/keepsafeImages/dagjr.php" />
+        <option value="$PROJECT_DIR$/keepsafeImages/index.php" />
+        <option value="$PROJECT_DIR$/keep-safe.php" />
+        <option value="$PROJECT_DIR$/css/keep-safe.css" />
+        <option value="$PROJECT_DIR$/administrator/functions/addUnsolvedFunc.php" />
+        <option value="$PROJECT_DIR$/administrator/addUnsolved.php" />
+        <option value="$PROJECT_DIR$/administrator/functions/updateUnsolvedFunc.php" />
+        <option value="$PROJECT_DIR$/administrator/functions/updateUnsolvedFuncSuccess.php" />
+        <option value="$PROJECT_DIR$/administrator/functions/updateWantedFunc.php" />
+        <option value="$PROJECT_DIR$/administrator/functions/updateWantedFuncSuccess.php" />
       </list>
     </option>
   </component>
@@ -143,8 +401,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
+    <option name="x" value="-1275" />
+    <option name="y" value="120" />
     <option name="width" value="1340" />
     <option name="height" value="688" />
   </component>
@@ -175,6 +433,36 @@
               <item name="macro-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="macro-web" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="macro-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="macro-web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="macro-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="macro-web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="login" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="macro-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="macro-web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sql" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="macro-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="macro-web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="uploads" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="macro-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="macro-web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="userImages" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="macro-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="macro-web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wantedImages" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -184,7 +472,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="styles&#9;FILE&#9;file://C:/xampp/htdocs/macro-web/css/styles.css&#10;index.p&#9;FILE&#9;file://C:/xampp/htdocs/macro-web/index.php&#10;indexh&#9;FILE&#9;file://C:/xampp/htdocs/macro-web/indexheader.html" />
+    <property name="SearchEverywhereHistoryKey" value="featu&#9;FILE&#9;file://C:/xampp/htdocs/macro-web/featured-crimes.php&#10;KEEP&#9;FILE&#9;file://C:/xampp/htdocs/macro-web/css/keep-safe.css&#10;keepsafe&#9;FILE&#9;file://C:/xampp/htdocs/macro-web/css/keepsafe.css&#10;keepsa&#9;FILE&#9;file://C:/xampp/htdocs/macro-web/keep-safe.php&#10;dbconn&#9;FILE&#9;file://C:/xampp/htdocs/macro-web/includes/dbconnect.php&#10;addkeep&#9;FILE&#9;file://C:/xampp/htdocs/macro-web/administrator/functions/addKeepsafeFunc.php&#10;multis&#9;FILE&#9;file://C:/xampp/htdocs/macro-web/css/multistep.css&#10;processrep&#9;FILE&#9;file://C:/xampp/htdocs/macro-web/functions/processreport.php&#10;multiste&#9;FILE&#9;file://C:/xampp/htdocs/macro-web/js/multistep.js&#10;styles&#9;FILE&#9;file://C:/xampp/htdocs/macro-web/css/styles.css&#10;index.p&#9;FILE&#9;file://C:/xampp/htdocs/macro-web/index.php&#10;indexh&#9;FILE&#9;file://C:/xampp/htdocs/macro-web/indexheader.html" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -212,26 +500,27 @@
       <option name="presentableId" value="Default" />
       <updated>1522005261870</updated>
       <workItem from="1522005265165" duration="30000" />
-      <workItem from="1522076924286" duration="1418000" />
+      <workItem from="1522076924286" duration="21721000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1448000" />
+    <option name="totallyTimeSpent" value="21751000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1374" y="121" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.206875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31160367" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19765739" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -239,7 +528,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -254,14 +542,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/multistep.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="56" column="39" lean-forward="false" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/indexheader.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-593">
@@ -278,12 +558,241 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/most-wanted-details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="63" />
+          <folding>
+            <marker date="1522003528228" expanded="true" signature="1260:1307" ph="SELECT * FRO... wanted" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="60" column="15" lean-forward="false" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
+        <state relative-caret-position="132">
+          <caret line="635" column="0" lean-forward="false" selection-start-line="635" selection-start-column="0" selection-end-line="635" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/processreport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="false" />
+            <marker date="1522086136501" expanded="true" signature="1928:2003" ph="SELECT `refe... referencecodes" />
+            <marker date="1522086136501" expanded="true" signature="2184:2301" ph="INSERT INTO `referencecodes`... " />
+            <marker date="1522086136501" expanded="true" signature="4060:4148" ph="INSERT INTO `attachments`... " />
+            <marker date="1522086136501" expanded="true" signature="9869:9952" ph="INSERT INTO ${$tableName}... " />
+            <marker date="1522086136501" expanded="true" signature="10495:10615" ph="INSERT INTO `${$tableName}`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/multistep.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="215" column="0" lean-forward="false" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/multistep.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="293" column="47" lean-forward="false" selection-start-line="293" selection-start-column="47" selection-end-line="293" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multistep.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="65" column="25" lean-forward="false" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/dbconnect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/addKeepsafe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keepsafeImages/dagjr.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keepsafeImages/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/functions/addKeepsafeFunc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="33" column="35" lean-forward="false" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+          <folding>
+            <marker date="1522100180637" expanded="true" signature="934:1114" ph="INSERT INTO `keepsafe`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keep-safe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="41" column="31" lean-forward="false" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#button#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1522101904941" expanded="true" signature="1265:1287" ph="SELECT * fro... keepSafe" />
+            <marker date="1522101904941" expanded="true" signature="1785:1807" ph="SELECT * fro... keepSafe" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/keepsafe.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765">
+          <caret line="51" column="1" lean-forward="false" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/keep-safe.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/featured-crimes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="44" column="71" lean-forward="false" selection-start-line="44" selection-start-column="71" selection-end-line="44" selection-end-column="71" />
+          <folding>
+            <marker date="1521877297321" expanded="true" signature="1275:1297" ph="SELECT * fro... unsolved" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/addUnsolved.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="161" lean-forward="false" selection-start-line="17" selection-start-column="161" selection-end-line="17" selection-end-column="161" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/functions/addUnsolvedFunc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="34" column="43" lean-forward="false" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+          <folding>
+            <marker date="1522103415128" expanded="true" signature="776:965" ph="INSERT INTO `unsolved`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/functions/updateWantedFunc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="45" column="51" lean-forward="false" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="51" />
+          <folding>
+            <marker date="1522124715196" expanded="true" signature="1274:1767" ph="UPDATE wanted... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/functions/updateWantedFuncSuccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="472" column="52" lean-forward="false" selection-start-line="472" selection-start-column="52" selection-end-line="472" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/functions/updateUnsolvedFunc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="33" column="53" lean-forward="false" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
+          <folding>
+            <marker date="1522103875778" expanded="true" signature="801:971" ph="UPDATE `unsolved`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/functions/updateUnsolvedFuncSuccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="472" column="49" lean-forward="false" selection-start-line="472" selection-start-column="49" selection-end-line="472" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/functions/updateKeepsafeFuncSuccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7581">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/functions/updateKeepsafeFunc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1522002105424" expanded="true" signature="759:895" ph="UPDATE `keepsafe`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/functions/addWantedFuncSuccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7695">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keepsafeImages/5ab96283257be3.37369722.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keepsafeImages/5ab963775a0ee5.65423881.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keepsafeImages/5ab96213c2d4d7.09440947.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keepsafeImages/5ab96b2171dae1.97552414.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>

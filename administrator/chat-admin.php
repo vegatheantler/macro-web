@@ -1,115 +1,183 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
+<head>
+  <meta charset="utf-8">
 
-      <meta name="generator"
-      content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+  <meta name="description" content="">
 
-  	<link href="../css/chat.css" rel="stylesheet">
-      <title>chatbox</title>
+<link rel="icon" href="images/macrofavico.ico">
 
-  </head>
-  <body>
-    <div class="container" id="main">
-       <div class="row" id="welcome">
-          <div  class="col-md-8 col-sm-8 leftside animated fadeInLeft">
-             <br><br><br><br>
-             <div class="leftside jumbotron well" id="chatbox">
-                <?php if (true) { ?>
-                  <div id="chatArea">
-                   <div class="container">
-                     <div class="row">
-                       <div class = " well">
-                         <div class="well" id="chatlogs">Retrieving.. <span class="fa fa-circle-o-notch fa-spin fa-fw"></span>
-                         </div><div id="loading" style="display:none;"><span class="fa fa-circle-o-notch fa-spin fa-fw"></span></div>
-                         <form name="form1">
-                           <div class="form-group">
-                             <div class="textarea-container">
-                               <textarea class="form-control"
-                               name="msg"
-                               placeholder="Type your message here"
-                               onkeydown = "if (event.keyCode == 13)
-                                 document.getElementById('chat-send').click()"
-                               ></textarea>
-                               <a href="#" id="chat-send" onclick="submitChat()"><span class="fa fa-paper-plane"></span></a>
-                             </div>
+
+<!-- Mobile viewport optimized -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=no">
+
+<!-- Bootstrap CSS -->
+<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="../css/bootstrap-glyphicons.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/font-awesome.min.css">
+
+<!-- Custom CSS -->
+<link href="../css/styles.css" rel="stylesheet">
+<link href="../css/animate.css" rel="stylesheet">
+<link href="../css/normalize.css" rel="stylesheet">
+
+<script src="../js/jquery-3.2.1.min.js"></script>
+<!-- Include Modernizr in the head, before any other Javascript -->
+<script src="../js/modernizr-2.6.2.min.js"></script>
+
+<!-- jQuery -->
+<script src="../js/jquery.validate.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<!-- GOOGLE FONT -->
+<link href='https://fonts.googleapis.com/css?family=Vast Shadow' rel='stylesheet'>
+
+  <meta name="generator"
+  content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+
+  <link href="../css/chat.css" rel="stylesheet">
+  <title>chatbox</title>
+
+</head>
+<body>
+  <?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}?>
+  <script type="text/javascript">
+    var id;
+  var scrolled = false;
+    function updateScroll(){
+    if(!scrolled){
+      var element = document.getElementById("chatlogs");
+      element.scrollTop = element.scrollHeight;
+    }
+  }
+  $("#chatlogs").scroll (function(){
+    scrolled=true;
+  });
+
+  </script>
+  <div class="container" id="main">
+   <div class="row" id="welcome">
+    <div  class="col-md-4 col-sm-4 leftside animated fadeInLeft">
+      <ul>
+        <?php
+        require_once '../includes/dbconnect.php';
+        $result1 = mysqli_query($conn, "SELECT * from reports r INNER JOIN chatlogs c ON r.`reportID` = c.`reportID` GROUP BY r.`reportID` ORDER BY c.`date_sent` DESC");
+
+        $_SESSION['isAdmin'] = true;
+
+        while ($extract = mysqli_fetch_array($result1))
+        {
+
+
+          echo "<li><button id='chats". $extract['reportID'] ."' value='". $extract['reportID'] . "'>";
+
+          $formattedTime = "<sup style='color:gray;font-size:50%;'>" . $extract['date_sent'] . "</sup>";
+          echo  $extract['reportID'] . " : " . $extract['message'] . " ".  $formattedTime . "<br /><hr>";
+
+          echo "</button></li>";
+
+          ?>
+          <script type="text/javascript">
+          $('#chats' + '<?php echo $extract["reportID"]; ?>').on('click', function(){
+              id = '<?php echo $extract['reportID']; ?>';
+
+              $("#chatlogs").load('../chat/logs.php?id='+ '<?php echo $extract['reportID']; ?>');
+              updateScroll();
+
+            });
+          </script>
+            <?php
+        }
+
+        ?>
+      </ul>
+    </div>
+    <div  class="col-md-8 col-sm-8 leftside animated fadeInLeft">
+     <br><br><br><br>
+     <div class="leftside jumbotron well" id="chatbox">
+      <?php if (true) { ?>
+      <div id="chatArea">
+       <div class="container">
+         <div class="row">
+           <div class = " well">
+             <div class="well" id="chatlogs">Retrieving.. <span class="fa fa-circle-o-notch fa-spin fa-fw"></span>
+             </div><div id="loading" style="display:none;"><span class="fa fa-circle-o-notch fa-spin fa-fw"></span></div>
+             <form name="form1">
+               <div class="form-group">
+                 <div class="textarea-container">
+                   <textarea class="form-control"
+                   name="msg"
+                   placeholder="Type your message here"
+                   onkeydown = "if (event.keyCode == 13)
+                   document.getElementById('chat-send').click()"
+                   ></textarea>
+                   <a href="#" id="chat-send" onclick="submitChat()"><span class="fa fa-paper-plane"></span></a>
+                 </div>
                              <!--
                              <textarea rows="1" style="resize:none;" class="form-control" name="msg"></textarea>
                              <br />
                              <a href="#" class="btn btn-primary" onclick="submitChat()">send</a>
                              <br />
                              <br />
-                             -->
-                           </div>
-                         </form>
-                       </div>
+                           -->
+                         </div>
+                       </form>
                      </div>
                    </div>
                  </div>
-               <?php   } else{ ?>
-                <h2>Welcome to <b>Macro</b>.</h2>
-                <p>Or <b>Manila's Anonymous Crime Reporting Online.</b> Connect with us — get to know all crime-related issues in your community. Get in-the-moment updates of the reports you submitted. And learn how crimes unfold, in real time, from every angle.</p>
-                <?php } ?>
+               </div>
+               <?php   } ?>
              </div>
-          </div>
+           </div>
+         </div>
+         <!-- end row -->
        </div>
-       <!-- end row -->
-    </div>
-    <!-- end container -->
-    </div><!-- end container -->
+       <!-- end container -->
+     </div><!-- end container -->
 
 
 
-<script>window.jQuery || document.write('<script src="../js/jquery-1.8.2.min.js"><\/script>')</script>
+     <script>window.jQuery || document.write('<script src="../js/jquery-1.8.2.min.js"><\/script>')</script>
 
 
 
-    <script>
+     <script>
 
-    function submitChat() {
-    if ( form1.msg.value == "")
-    {
-      return;
-    }
+      function submitChat() {
+        if ( form1.msg.value == "")
+        {
+          return;
+        }
     //$('#loading').show();
     var msg = form1.msg.value;
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-    var chatlogs = document.getElementById("chatlogs");
-    chatlogs.innerHTML = xmlhttp.responseText;
-    form1.msg.value="";
-    $("#chatlogs").scrollTop(function() { return this.scrollHeight; });
+      if (this.readyState == 4 && this.status == 200) {
+        var chatlogs = document.getElementById("chatlogs");
+        chatlogs.innerHTML = xmlhttp.responseText;
+        form1.msg.value="";
+        $("#chatlogs").scrollTop(function() { return this.scrollHeight; });
     //$('#loading').hide();
-    }
-    }
-    xmlhttp.open("GET","../chat/insert.php?msg="+msg, true);
-    xmlhttp.send();
-    }
-    $(document).ready (function(){
-    $.ajaxSetup({cache:false});
-    setInterval(function(){
-    $("#chatlogs").load('../chat/logs.php');
-    updateScroll();
-    }, 2000);
+  }
+}
+xmlhttp.open("GET","../chat/insert.php?msg="+msg + "&id=" + id, true);
+xmlhttp.send();
+}
+$(document).ready (function(){
+
+  $.ajaxSetup({cache:false});
+
+  
+  
 
 
-    var scrolled = false;
-    function updateScroll(){
-    if(!scrolled){
-      var element = document.getElementById("chatlogs");
-      element.scrollTop = element.scrollHeight;
-    }
-    }
-    $("#chatlogs").scroll (function(){
-    scrolled=true;
-    });
-    });
-    </script>
+});
+</script>
 
 
 
-  </body>
+</body>
 </html>

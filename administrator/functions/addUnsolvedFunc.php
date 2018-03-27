@@ -5,7 +5,8 @@
   $title = $_POST['title'];
   $casenumber = $_POST['casenumber'];
   $description = $_POST['description'];
-  $file = $_FILES['file'];
+
+      $file = $_FILES['file'];
 
 
   $fileName = $_FILES['file']['name'];
@@ -24,11 +25,13 @@
     if ($fileError === 0) {
       if ($fileSize < 2000000) {
         $fileNameNew = uniqid('', true).".".$fileActualExt;
-        $sql = "INSERT INTO `unsolved` (`caseID`, `title`, `imagename`, `casenumber`, `description`, `created_at`) VALUES (NULL, '$title', '$fileNameNew', '$casenumber', '$description', CURRENT_TIMESTAMP);";
-
+        $sql = "
+        INSERT INTO `unsolved` (`caseID`, `title`, `imagename`, `casenumber`, `description`, `created_at`) VALUES (NULL , '$title', '$fileNameNew', '$casenumber', '$description', CURRENT_TIMESTAMP);
+        ";
+          mysqli_query($conn,$sql);
         $fileDestination = '../../unsolvedImages/'.$fileNameNew;
         move_uploaded_file($fileTmpName,$fileDestination);
-        mysqli_query($conn,$sql);
+
         header("Location: ../functions/addUnsolvedFuncSuccess.php");
       }else {
         echo "Your file is too big! ";

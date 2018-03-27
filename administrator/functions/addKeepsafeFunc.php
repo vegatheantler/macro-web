@@ -23,13 +23,15 @@
     if ($fileError === 0) {
       if ($fileSize < 2000000) {
         $fileNameNew = uniqid('', true).".".$fileActualExt;
-        $sql = "
-        INSERT INTO `keepsafe` (`id`, `sidebarName`, `imageName`, `content`, `defaultOpened`, `created_at`) VALUES (NULL, '$sidebarName', '$fileNameNew', '$content', '', CURRENT_TIMESTAMP);
-        ";
+
         $fileDestination = '../../keepsafeImages/'.$fileNameNew;
         move_uploaded_file($fileTmpName,$fileDestination);
-        mysqli_query($conn,$sql);
+
         header("Location: ../functions/addKeepsafeFuncSuccess.php");
+          $sql = "
+        INSERT INTO `keepsafe` (`id`, `sidebarName`, `imageName`, `content`, `defaultOpened`, `created_at`) VALUES (NULL, '$sidebarName', '$fileNameNew', '$content', '', CURRENT_TIMESTAMP);
+        ";
+          mysqli_query($conn,$sql);
       }else {
         echo "Your file is too big! ";
         ?>

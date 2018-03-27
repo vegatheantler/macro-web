@@ -43,7 +43,7 @@
         mysqli_query($conn,$sql);
         $fileDestination = '../uploads/'.$fileNameNew;
         move_uploaded_file($fileTmpName,$fileDestination);
-        header("Location: ../functions/updateUnsolvedFuncSuccess.php");
+        header("Location: ../functions/updateWantedFuncSuccess.php");
       }else {
         echo "Your file is too big! ";
         ?>

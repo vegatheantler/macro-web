@@ -32,7 +32,7 @@
       // output data of each row
       while($row = $result->fetch_assoc()) {
         ?>
-        <button class="tablinks" onclick="openCity(event, '<?php echo $row["sidebarName"]; ?>')" id="<?php echo $row["defaultOpened"]; ?>"><?php echo $row["sidebarName"]; ?></button>
+        <button class="tablinks" onclick="openCity(event, '<?php echo $row["sidebarName"]; ?>')" id="<?php echo $row["defaultOpened"]; ?>"><?php echo strtoupper($row["sidebarName"]); ?></button>
         <?php
       }}?>
 
@@ -48,9 +48,9 @@
       while($row = $result->fetch_assoc()) {
         ?>
         <div id="<?php echo $row["sidebarName"]; ?>" class="tabcontent">
-          <h3><?php echo $row["sidebarName"]; ?></h3>
+          <h3><?php echo ucfirst($row["sidebarName"]); ?></h3>
           <h4>Posted Date: <?php echo $row["created_at"]; ?></h4>
-          <img height="400px" width="100%" src="wantedImages/<?php echo $row["imageName"]; ?>.jpg" alt="" style="border-radius:10px;">
+          <img height="400px" width="100%" src="keepsafeImages/<?php echo $row["imageName"]; ?>" alt="" style="border-radius:10px;">
           <p><?php echo $row["content"]; ?></p>
         </div>
         <?php

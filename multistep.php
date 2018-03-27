@@ -24,15 +24,18 @@ if (isset($_POST['wantedID']) && isset($_POST['wantedName'])){
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext">
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body style="background-color: pink;">
 <!-- multistep form -->
-
+<?php
+include_once 'navbar.html';
+?>
 <div class="container" id="center1">
 		<div class="row">
 			<div class="col-md-12">
-<form id="msform" name="msform" method="post" action="functions/processreport.php" enctype="multipart/form-data">
+<form id="msform" name="msform" method="post" action="#" enctype="multipart/form-data">
 	<!-- progressbar -->
 	<div class="progressbar noHighlight" id="progs" >
 		<ul id="progressbar">
@@ -53,7 +56,7 @@ if (isset($_POST['wantedID']) && isset($_POST['wantedName'])){
 		<select  id="typeOfOffense" name="typeOfOffense" class="col-xs-12 col-sm-6" required> <option seletected value='' disabled selected hidden>Select Offense Type</option><option>Arson</option><option >Bank Fraud</option><option >Burglary Building</option><option >Burglary Habitation</option><option >Drugs</option><option >Foreign Fighter Radicalization</option><option >Forgery</option><option >Homicide</option><option >Robbery</option><option >Sexual Assault</option><option >Terrorism</option><option >Theft</option><option >Vehicle Theft</option><option >Warrant</option><option>Other</option>
 		</select>
 		<span class="tooltipContainer"><input id="dateTimeOfOffense" class ="col-xs-12 col-sm-6" type="text"  name="dateTimeOfOffense" placeholder="Date and Time" required/><span class="tooltiptext">Or your approximate guess of the time and date of the crime.</span></span>
-		<span class="tooltipContainer"><input id="cityOfOffense" class="col-xs-12 col-sm-4" type="text" name="cityOfOffense" placeholder="City" required /> <span class="tooltiptext">The city or district the crime took place.</span></span>
+		<span class="tooltipContainer"><input id="cityOfOffense" class="col-xs-12 col-sm-4" type="text" name="cityOfOffense" disabled="true" required value="Manila" /> <span class="tooltiptext">The city or district the crime took place.</span></span>
 		<span class="tooltipContainer"><input id="barangayOfOffense" class="col-xs-12 col-sm-4" type="text"  name="barangayOfOffense" placeholder="Barangay"/><span class="tooltiptext">Optional</span></span>
 		<span class="tooltipContainer"><input id="streetAddressOfOffense" class="col-xs-12 col-sm-4" name="streetAddressOfOffense" type="text"   placeholder="Street"/><span class="tooltiptext">Optional</span></span>
 		<span class="tooltipContainer"><textarea rows="10" id="description" class="col-xs-12" type="text" name="description" placeholder="Description" required/></textarea><span class="tooltiptext">Describe as detailed as possible the crime you want to report about including <b>who, what, when, where and how do you know</b>.</span></span>
@@ -145,10 +148,10 @@ The information you provide to us are anonymous. However, you must know that the
 		<input type="text" name="infFirstname[]" class="col-xs-12 col-sm-6 col-md-6" placeholder="Your First Name" />
 		<input type="text" name="infStreetAddress[]" class="col-xs-12 col-sm-6 col-md-6" placeholder="Street Address" />
 		<input type="text" name="infBarangay[]" class="col-xs-12 col-sm-6 col-md-6" placeholder="Barangay" />
-		<input type="text" name="infNumber[]" class="col-xs-12 col-sm-6 col-md-6" placeholder="Contact Phone" />
-		<input type="text" name="infEmail[]" class="col-xs-12 col-sm-6 col-md-6" placeholder="E-mail Address" />
+		<input type="number" name="infNumber[]" class="col-xs-12 col-sm-6 col-md-6" id="contactphone" placeholder="Contact Phone" />
+        <input type="text" id="email" name="infEmail[]" class="col-xs-12 col-sm-6 col-md-6"  placeholder="E-mail Address" >
 		<input type="button" name="previous" class="previous action-button" value="Previous" />
-		<input type="button" name="next" class="next action-button" value="Next" />
+		<input type="button" name="next" class="next action-button" value="Next" id="infbutton1" />
 	</fieldset>
 	<fieldset id="finalize">
 		<h2 class="fs-title">Agreement</h2>

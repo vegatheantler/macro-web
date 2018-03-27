@@ -2,7 +2,10 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-$reportID = 53;
+if (isset($_GET['id'])){
+	$reportID = $_GET['id'];
+} else 
+	$reportID = $_SESSION['reportID'];
 
 
 require_once '../includes/dbconnect.php';
