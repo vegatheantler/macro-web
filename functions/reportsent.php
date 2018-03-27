@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <title>MACRO | REPORT SUCCESS</title>
+      <link rel="icon" href="../images/macrofavico.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Faster One">

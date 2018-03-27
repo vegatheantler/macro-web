@@ -50,7 +50,7 @@ $wantedID = mysqli_real_escape_string($conn,$_GET['wantedID']);
 <!-- start of output and loop it -->
  	<div class="container">
     	<div class="row">
-        	<div class="col-xs-12 col-sm-5 "><img style="width: 350px; height: 500px;border-radius: 5px;" class="img-responsive" src="wantedImages/<?php echo $row["wantedID"];?>.jpg" /></div>
+        	<div class="col-xs-12 col-sm-5 "><img style="width: 350px; height: 500px;border-radius: 5px;" class="img-responsive" src="wantedImages/<?php echo $row["imgName"];?>" /></div>
         	<div class="col-xs-12 col-sm-7" style="background-color:#EEEDEB;border-radius: 7px;">
         		<h3 id="mwd1"><?php echo strtoupper($row["firstName"]);?> <?php echo strtoupper($row["lastName"]);?> wanted for <?php echo strtoupper($row["CriminalCase"]);?></h3>
 				<dl>

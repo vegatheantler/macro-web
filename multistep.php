@@ -35,7 +35,7 @@ include_once 'navbar.html';
 <div class="container" id="center1">
 		<div class="row">
 			<div class="col-md-12">
-<form id="msform" name="msform" method="post" action="#" enctype="multipart/form-data">
+<form id="msform" name="msform" method="post" action="functions/processreport.php" enctype="multipart/form-data">
 	<!-- progressbar -->
 	<div class="progressbar noHighlight" id="progs" >
 		<ul id="progressbar">

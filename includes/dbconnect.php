@@ -1,7 +1,7 @@
 <?php
-$servername = "127.0.0.1";
-$serverusername = "root";
-$serverpassword = "";
+$servername = "35.196.47.99";
+$serverusername = "macroadmin";
+$serverpassword = "macrolife";
 $serverdb = "pnp2";
 
 // Create connection

@@ -6,19 +6,22 @@
   $lname = $_POST['lname'];
   $criminalcase = $_POST['criminalcase'];
   $crimelocation = $_POST['crimelocation'];
-  $crimeDesc = $_POST['crimeDesc'];
+  $crimeDesc1 = $_POST['crimeDesc'];
+  $crimeDesc = addslashes($crimeDesc1);
   $time = $_POST['time'];
   $warrantDate = $_POST['warrantDate'];
   $age = $_POST['age'];
   $gender = $_POST['gender'];
-  $height = $_POST['height'];
+  $height1 = $_POST['height'];
+  $height = addslashes($height1);
   $build = $_POST['build'];
   $hairColor = $_POST['hairColor'];
   $hairLength = $_POST['hairLength'];
   $hairStyle = $_POST['hairStyle'];
   $facialHair = $_POST['facialHair'];
   $ethnicApp = $_POST['ethnicApp'];
-  $addInfo = $_POST['addInfo'];
+  $addInfo1 = $_POST['addInfo'];
+  $addInfo = addslashes($addInfo1);
   $file = $_FILES['file'];
 
 
@@ -40,7 +43,7 @@
         $fileNameNew = uniqid('', true).".".$fileActualExt;
         $sql = "INSERT INTO wanted (wantedID, firstName, lastName, CriminalCase, crimeLocation, crimeDesc, time, warrantDate, age, gender, height, build, hairColor, hairLength, hairStyle, facialHair, ethnicApp, addInfo,imgName) VALUES (NULL, '$fname', '$lname', '$criminalcase', '$crimelocation', '$crimeDesc', '$time', '$warrantDate', '$age', '$gender', '$height', '$build', '$hairColor', '$hairLength', '$hairStyle', '$facialHair', '$ethnicApp', '$addInfo', '$fileNameNew');";
         mysqli_query($conn,$sql);
-        $fileDestination = '../uploads/'.$fileNameNew;
+        $fileDestination = '../../wantedImages/'.$fileNameNew;
         move_uploaded_file($fileTmpName,$fileDestination);
         header("Location: ../functions/addWantedFuncSuccess.php");
       }else {

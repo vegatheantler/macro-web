@@ -4,9 +4,9 @@
   //all the variables
   $title = $_POST['title'];
   $casenumber = $_POST['casenumber'];
-  $description = $_POST['description'];
-
-      $file = $_FILES['file'];
+  $description1 = $_POST['description'];
+  $description = addslashes($description1);
+  $file = $_FILES['file'];
 
 
   $fileName = $_FILES['file']['name'];

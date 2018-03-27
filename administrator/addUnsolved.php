@@ -15,7 +15,7 @@
       <div class="row"><br>
         <div class="col-xs-6"><input type="text" class="form-control"  name="title" placeholder="Title" required></div>
         <div class="col-xs-6"><input type="text" class="form-control"  name="casenumber" placeholder="Case Number" required><br></div>
-        <div class="col-xs-12"><textarea name="description" class="form-control"  rows="5" placeholder="ENTER YOUR DESCRIPTION........" cols="70" maxlength="500"></textarea><br></div>
+        <div class="col-xs-12"><textarea name="description" class="form-control"  rows="5" placeholder="ENTER YOUR DESCRIPTION........"></textarea><br></div>
         <div class="col-xs-12">  <input type="file" class="form-control" name="file" ><br></div>
         <div class="col-xs-12"><button type="submit" class="btn btn-primary btn-lg btn-block" name="submit">SAVE</button></div>
       </div>

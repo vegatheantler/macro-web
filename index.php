@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title></title>
+      <title>MACRO PH</title>
       <?php require ("indexheader.html");?>
    </head>
    <body>

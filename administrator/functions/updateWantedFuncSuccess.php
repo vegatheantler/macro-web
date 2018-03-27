@@ -446,7 +446,7 @@ width: 90px;
     <!-- Redirection Counter -->
 <script type="text/javascript">
   var count = 10; // Timer
-  var redirect = "../updateKeepsafe.php"; // Target URL
+  var redirect = "../updateWanted.php"; // Target URL
 
   function countDown() {
     var timer = document.getElementById("timer"); // Timer ID

@@ -3,7 +3,8 @@
   if (isset($_POST['submit'])) {
   //all the variables
   $sidebarName = $_POST['sidebarName'];
-  $content = $_POST['content'];
+  $content1 = $_POST['content'];
+  $content = addslashes($content1);
   $file = $_FILES['file'];
 
 

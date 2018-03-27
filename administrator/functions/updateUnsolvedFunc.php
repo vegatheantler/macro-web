@@ -5,7 +5,8 @@
   $caseID = $_POST['caseID'];
   $title = $_POST['title'];
   $casenumber = $_POST['casenumber'];
-  $description = $_POST['description'];
+  $description1 = $_POST['description'];
+  $description = addslashes($description1);
   $file = $_FILES['file'];
 
 
