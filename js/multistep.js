@@ -216,7 +216,7 @@ function imNotARobot() {
 
 $(document).ready(function () {
 
-	
+
 
 	$('#genNext').attr('disabled','disabled');
 	$('#submitForm').attr('disabled','disabled');
@@ -294,4 +294,8 @@ $('#contactphone').keyup(function() {
         $('#infbutton1').prop('disabled', false);
 	}
 });
-
+$("#datepicker").datepicker({
+    format: "yyyy",
+    viewMode: "years",
+    minViewMode: "years"
+});

@@ -61,7 +61,7 @@ if (session_status() == PHP_SESSION_NONE) {
   <div class="container" id="main">
    <div class="row" id="welcome">
     <div  class="col-md-4 col-sm-4 leftside animated fadeInLeft">
-      <ul>
+      <ul style="margin-top: 45%;">
         <?php
         require_once '../includes/dbconnect.php';
         $result1 = mysqli_query($conn, "SELECT * from reports r INNER JOIN chatlogs c ON r.`reportID` = c.`reportID` GROUP BY r.`reportID` ORDER BY c.`date_sent` DESC");
@@ -72,7 +72,7 @@ if (session_status() == PHP_SESSION_NONE) {
         {
 
 
-          echo "<li><button id='chats". $extract['reportID'] ."' value='". $extract['reportID'] . "'>";
+          echo "<li style='width:200px;'><button style='width: 100%;' id='chats". $extract['reportID'] ."' value='". $extract['reportID'] . "'>";
 
           $formattedTime = "<sup style='color:gray;font-size:50%;'>" . $extract['date_sent'] . "</sup>";
           echo  $extract['reportID'] . " : " . $extract['message'] . " ".  $formattedTime . "<br /><hr>";

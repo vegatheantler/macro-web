@@ -21,9 +21,15 @@ if (isset($_POST['wantedID']) && isset($_POST['wantedName'])){
 <head>
     <title>MACRO PH | REPORT FORMS</title>
 <link href="css/multistep.css" rel="stylesheet">
+<link rel="icon" href="images/macrofavico.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext">
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css" rel="stylesheet"/>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -31,7 +37,7 @@ if (isset($_POST['wantedID']) && isset($_POST['wantedName'])){
 <!-- multistep form -->
 <?php
 include_once 'navbar.html';
-?>
+?><br><br><br><br>
 <div class="container" id="center1">
 		<div class="row">
 			<div class="col-md-12">
@@ -53,18 +59,47 @@ include_once 'navbar.html';
 		<h2 class="fs-title">General Information</h2>
 		<h3 class="fs-subtitle">(Required)</h3>
 
-		<select  id="typeOfOffense" name="typeOfOffense" class="col-xs-12 col-sm-6" required> <option seletected value='' disabled selected hidden>Select Offense Type</option><option>Arson</option><option >Bank Fraud</option><option >Burglary Building</option><option >Burglary Habitation</option><option >Drugs</option><option >Foreign Fighter Radicalization</option><option >Forgery</option><option >Homicide</option><option >Robbery</option><option >Sexual Assault</option><option >Terrorism</option><option >Theft</option><option >Vehicle Theft</option><option >Warrant</option><option>Other</option>
+		<select  id="typeOfOffense" name="typeOfOffense" class="col-xs-12 col-sm-6" required>
+			<option value="" selected hidden>SELECT A CRIME</option>
+			<option value="Arson">Arson</option>
+			<option value="Assault/Harassment">Assault/Harassment</option>
+			<option value="Burglary">Burglary</option>
+			<option value="Business crime">Business crime</option>
+			<option value="Criminal damage">Criminal damage</option>
+			<option value="Cybercrime">Cybercrime</option>
+			<option value="Disqualified/Uninsured drivers">Disqualified/Uninsured drivers</option>
+			<option value="Drink-driving">Drink-driving</option>
+			<option value="Drug manufacture">Drug manufacture</option>
+			<option value="Drug trafficking/supply">Drug trafficking/supply</option>
+			<option value="Environmental crime">Environmental crime</option>
+			<option value="Fraud and forgery">Fraud and forgery</option>
+			<option value="Fugitive campaigns">Fugitive campaigns</option>
+			<option value="Handling stolen goods">Handling stolen goods</option>
+			<option value="Human trafficking">Human trafficking</option>
+			<option value="Illegal Tobacco">Illegal Tobacco</option>
+			<option value="Immigration">Immigration</option>
+			<option value="Most Wanted suspects">Most Wanted suspects</option>
+			<option value="Murder">Murder</option>
+			<option value="Possession of weapons">Possession of weapons</option>
+			<option value="Proceeds of crime">Proceeds of crime</option>
+			<option value="Rape/sexual offences">Rape/sexual offences</option>
+			<option value="Robbery">Robbery</option>
+			<option value="Smuggling">Smuggling</option>
+			<option value="Tax evasion">Tax evasion</option>
+			<option value="Terrorism">Terrorism</option>
+			<option value="Theft">Theft</option>
+			<option value="Vehicle crime">Vehicle crime</option>
 		</select>
 		<span class="tooltipContainer"><input id="dateTimeOfOffense" class ="col-xs-12 col-sm-6" type="text"  name="dateTimeOfOffense" placeholder="Date and Time" required/><span class="tooltiptext">Or your approximate guess of the time and date of the crime.</span></span>
 		<span class="tooltipContainer"><input id="cityOfOffense" class="col-xs-12 col-sm-4" type="text" name="cityOfOffense" disabled="true" required value="Manila" /> <span class="tooltiptext">The city or district the crime took place.</span></span>
 		<span class="tooltipContainer"><input id="barangayOfOffense" class="col-xs-12 col-sm-4" type="text"  name="barangayOfOffense" placeholder="Barangay"/><span class="tooltiptext">Optional</span></span>
 		<span class="tooltipContainer"><input id="streetAddressOfOffense" class="col-xs-12 col-sm-4" name="streetAddressOfOffense" type="text"   placeholder="Street"/><span class="tooltiptext">Optional</span></span>
 		<span class="tooltipContainer"><textarea rows="10" id="description" class="col-xs-12" type="text" name="description" placeholder="Description" required/></textarea><span class="tooltiptext">Describe as detailed as possible the crime you want to report about including <b>who, what, when, where and how do you know</b>.</span></span>
-		<input type="button" name="next" id="genNext" class="next action-button" value="Next"/>
+		<input type="button" name="next" id="genNext" class="next action-button" value="Next"	/>
 	</fieldset>
 	<fieldset>
 		<h2 class="fs-title">Involved Parties</h2>
-		<h3 class="fs-subtitle">(OPTIONAL)</h3><h3 class="fs-subtitle"><label for="quantityParty">Number of Involved Person/s: </label><input type="number" min='0' id="quantityParty" name="quantityParty" class="col-xs-12" value=0></h3>
+		<h3 class="fs-subtitle">(OPTIONAL)</h3><h3 class="fs-subtitle"><label for="quantityParty">Number of Involved Person/s: </label><input type="number" min='1' id="quantityParty" name="quantityParty" class="col-xs-12" value=0></h3>
 		<div class="duplicates">
 			<div id="party0" class="hidden" name ="party0">
 			<hr>
@@ -82,17 +117,27 @@ include_once 'navbar.html';
 				<select class="col-xs-12 col-sm-6 col-md-4" name="susWeight[]"><option value='' selected hidden>Weight/Build</option><option value="Thin">Thin</option><option value="Average">Average</option><option value="Athletic">Athletic</option><option value="Large">Large</option><option value="Obese">Obese</option>
 				</select>
 				<input type="text" name="susHeight[]" class="col-xs-12 col-sm-6 col-md-3" placeholder="Height (Approx.)" />
-				<input type="text" class="col-xs-12 col-sm-6 col-md-3" name="susHairColor[]" placeholder="Hair Color" />
+				<select class="col-xs-12 col-sm-6 col-md-3" name="susHairColor[]">
+				  <option selected hidden>Hair Color</option>
+					<option select disabled>SELECT HAIR COLOR</option>
+				  <option value="Black">Black</option>
+				  <option value="Brown">Brown</option>
+				  <option value="Blond">Blond</option>
+				  <option value="Red">Red</option>
+				  <option value="Gray">Gray</option>
+				  <option value="White">White</option>
+				  <option value="Others">Others</option>
+				</select>
 				<input type="text" class="col-xs-12 col-sm-6 col-md-3" name="susFacialhair[]" placeholder="Facial Hair" />
 				<input type="text" class="col-xs-12 col-sm-6 col-md-3" name="susEyecolor[]" placeholder="Eye Color" />
-				<input type="text" class="col-xs-12 col-sm-6 col-md-4" name="susNumber[]" placeholder="Suspect's Phone #" />
-				<input type="text" class="col-xs-12 col-sm-6 col-md-4" name="susAge[]" placeholder="Age (Approx.)" />
+				<input type="number" class="col-xs-12 col-sm-6 col-md-4" name="susNumber[]" min="5" max="11" placeholder="Suspect's Phone #" />
+				<input type="number" class="col-xs-12 col-sm-6 col-md-4" name="susAge[]" placeholder="Age (Approx.)" />
 				<input type="text" class="col-xs-12  col-md-4" name="susLastSeen[]" placeholder="Last Seen Area" />
 				<input type="text" class="col-xs-12 col-sm-12" name="susScars[]" placeholder="Scars, Marks, etc.." />
 				<input type="text" class="col-xs-12 col-sm-12" name="susClothing[]" placeholder="Clothing" />
 				<textarea rows="5" class="col-xs-12" name="susFeatures[]" placeholder="Distinguishing Features (any other information about what the offender looks like)
 				"></textarea>
-				<input type = "text" class="col-xs-12" name="susAssoc[]" placeholder="Gangs, assosiates, hangouts or animals">
+				<input type = "text" class="col-xs-12" name="susAssoc[]" placeholder="Gangs, assosiates, hangouts or animals"><br><br><br>
 			</div>
 		</div>
 		<input type="button" name="previous" class="previous action-button " value="Previous" />
@@ -101,13 +146,13 @@ include_once 'navbar.html';
 	<fieldset>
 		<h2 class="fs-title">Vehicle</h2>
 		<h3 class="fs-subtitle">(OPTIONAL)</h3>
-		<h3 class="fs-subtitle"><label for="quantityVehicle">Number of Involved Vehicle/s: </label><input type="number" min='0' id="quantityVehicle" class="col-xs-12" name="quantityVehicle" value=0></h3>
+		<h3 class="fs-subtitle"><label for="quantityVehicle">Number of Involved Vehicle/s: </label><input type="number" min='1' id="quantityVehicle" class="col-xs-12" name="quantityVehicle" value=0></h3>
 		<div class="duplicates">
 			<div id="vehicle0" class = "hidden" name="vehicle0">
 				<hr>
 				<input type="text" name="carMake[]" class="col-xs-12 col-sm-6 col-md-4" placeholder="Make/Brand" />
 				<input type="text" name="carModel[]" class="col-xs-12 col-sm-6 col-md-4" placeholder="Model" />
-				<input type="text" name="carYear[]" class="col-xs-12 col-sm-12 col-md-4" placeholder="Year" />
+				<input type="text"  id="datepicker" name="carYear[]" class="col-xs-12 col-sm-12 col-md-4" placeholder="Year"/>
 				<input type="text" name="carColor[]" class="col-xs-12 col-sm-6 col-md-6" placeholder="Color" />
 				<input type="text" name="carPlate[]" class="col-xs-12 col-sm-6 col-md-6" placeholder="Plate Number" />
 				<textarea rows="5" name="carDesc[]" class="col-xs-12" placeholder="Description (any identifying marks, bumper stickers, company logos, etc.)"></textarea>
@@ -119,7 +164,7 @@ include_once 'navbar.html';
 	<fieldset>
 		<h2 class="fs-title">Evidence</h2>
 		<h3 class="fs-subtitle">(OPTIONAL)</h3>
-		<h3 class="fs-subtitle"><label for="quantityEvidence">Number of Evidence/s: </label><input type="number" min='0' id="quantityEvidence" class="col-xs-12" name="quantityEvidence" value=0 ></h3>
+		<h3 class="fs-subtitle"><label for="quantityEvidence">Number of Evidence/s: </label><input type="number" min='1' id="quantityEvidence" class="col-xs-12" name="quantityEvidence" value=0 ></h3>
 		<h3 class="fs-subtitle"><p>If you have a digital photograph that's relevant to this report (for example, a photo taken with your phone) you can upload it here. Please ensure the image is in .jpg or .jpeg format and that it’s no bigger than 2 MB in size.</p><br>
 <p>Files must be less than <strong>20 MB</strong><br>Allowed file types: <strong>MP3, MP4, JPG, JPEG, PNG & GIF</strong></p></h3>
 		<div class="duplicates">
@@ -162,7 +207,12 @@ The information you provide to us are anonymous. However, you must know that the
 			tabindex : 0
 		};
 
-</script><div class="g-recaptcha" data-callback="imNotARobot" data-sitekey="6LcR3UsUAAAAAB69NDDZNCy3DG1eGTN0VnA7czgh"></div></center><br>
+
+</script>
+<div class="g-recaptcha" data-callback="imNotARobot" data-sitekey="6LenUk8UAAAAAPUaz52v3sn-mh0ALAz_H91Tjbvk"></div></center><br>
+<!-- uncomment below is your in localhost -->
+</script><div class="g-recaptcha" data-callback="imNotARobot" data-sitekey="6LfphU8UAAAAAH8fDoAYvd8p3A0-CbHO3sTQ5aeY"></div></center><br>
+
 		<p class="noHighlight">
 		<input type="text" id="password" name="password" class="byTwo" placeholder="Password for your Report" required/></p>
 		<p class="noHighlight">
