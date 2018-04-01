@@ -209,9 +209,10 @@ The information you provide to us are anonymous. However, you must know that the
 
 
 </script>
+<!-- uncomment below is your in macroph.ml -->
 <div class="g-recaptcha" data-callback="imNotARobot" data-sitekey="6LenUk8UAAAAAPUaz52v3sn-mh0ALAz_H91Tjbvk"></div></center><br>
 <!-- uncomment below is your in localhost -->
-</script><div class="g-recaptcha" data-callback="imNotARobot" data-sitekey="6LfphU8UAAAAAH8fDoAYvd8p3A0-CbHO3sTQ5aeY"></div></center><br>
+<!-- </script><div class="g-recaptcha" data-callback="imNotARobot" data-sitekey="6LfphU8UAAAAAH8fDoAYvd8p3A0-CbHO3sTQ5aeY"></div></center><br> -->
 
 		<p class="noHighlight">
 		<input type="text" id="password" name="password" class="byTwo" placeholder="Password for your Report" required/></p>
