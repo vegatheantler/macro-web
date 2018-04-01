@@ -12,7 +12,6 @@ $auth = 0;
 
 if ((isset($_SESSION['isAdmin']) && $_SESSION['isAdmin'] == true)){
 	$auth = 1;
-	$_SESSION['isAdmin'] = false;
 }
 
 require_once '../includes/dbconnect.php';
