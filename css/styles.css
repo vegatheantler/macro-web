@@ -120,6 +120,7 @@ footer css
   background:none;
   width: 50%;
   left: 50%;
+  z-index: 5;
 
 }
 #footer-chenes1 {
@@ -133,6 +134,7 @@ footer css
   padding: 0;
   background:none;
   width: 50%;
+  z-index: 5;
 }
 
 #footing {

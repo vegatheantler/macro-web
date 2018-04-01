@@ -78,7 +78,7 @@ if(isset($_POST['submit-search'])){
 							<div class="col-sm-6" id="ucContainer">
 								<form method="POST" action="multistep.php">
 									<h4 class="animated fadeIn">PUBLISHED DATE: <?php echo $row["created_at"]; ?></h4><br>
-									<img id="unsolved-img" class="animated bounceIn" src="unsolvedImages/<?php echo $row["imagename"]; ?>.jpg">
+									<img id="unsolved-img" class="animated bounceIn" src="unsolvedImages/<?php echo $row["imagename"]; ?>">
 									<h1 id="ctitle" style="text-transform: uppercase;" class="animated fadeIn"><?php echo $row["title"]; ?></h1>
 									<h4 class="animated fadeIn">CASE# <?php echo $row["casenumber"]; ?></h4>
 									<p class="animated fadeIn"><?php echo $row["description"] ?></p>
@@ -125,7 +125,7 @@ if(isset($_POST['submit-search'])){
 						<div class="col-xs-12 col-sm-6 col-md-3" id="lobo1">
 							<form class="form" method="POST" action="multistep.php">
 							<li>
-							<a href="most-wanted-details.php?wantedID=<?php echo $row["wantedID"];?>""><img style="width: 200px; height: 100px;border-radius: 5px;" src="wantedImages/<?php echo $row["wantedID"];?>.jpg" />
+							<a href="most-wanted-details.php?wantedID=<?php echo $row["wantedID"];?>""><img style="width: 200px; height: 100px;border-radius: 5px;" src="wantedImages/<?php echo $row["imgName"];?>" />
 							<h4><?php echo ucfirst($row["firstName"]);?>" <?php echo ucfirst($row["lastName"]);?></h4></a>
 								<dl class="tags">
 									<dt>Crime location:</dt>
