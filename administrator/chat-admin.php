@@ -61,7 +61,7 @@ if (session_status() == PHP_SESSION_NONE) {
   <div class="container" id="main">
    <div class="row" id="welcome">
     <div  class="col-md-4 col-sm-4 leftside animated fadeInLeft">
-      
+
         <script type='text/javascript'>setInterval(function(){
           $('#chat-inbox').load('../chat/inbox.php');
         }, 2000);</script>
@@ -136,6 +136,12 @@ if (session_status() == PHP_SESSION_NONE) {
     //$('#loading').hide();
   }
 }
+//
+
+<?php $_SESSION['isAdmin'] = true; ?>
+
+
+//
 xmlhttp.open("GET","../chat/insert.php?msg="+msg + "&id=" + id, true);
 xmlhttp.send();
 }
@@ -143,8 +149,8 @@ $(document).ready (function(){
 
   $.ajaxSetup({cache:false});
 
-  
-  
+
+
 
 
 });

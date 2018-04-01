@@ -1,4 +1,4 @@
-<?php
+<ul><?php
 require_once '../includes/dbconnect.php';
         $result1 = mysqli_query($conn, "SELECT t1.* FROM chatlogs t1 JOIN (SELECT *, MAX(date_sent) date_sent2 FROM chatlogs GROUP BY reportID) t2 ON t1.reportID = t2.reportID AND t1.date_sent = t2.date_sent2 ORDER BY t1.date_sent DESC");
 
@@ -32,4 +32,4 @@ require_once '../includes/dbconnect.php';
           </script>
             <?php
         }
-        ?>
+        ?></ul>

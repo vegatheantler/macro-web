@@ -4,15 +4,16 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 if (isset($_GET['id'])){
 	$reportID = $_GET['id'];
-} else 
+} else
 	$reportID = $_SESSION['reportID'];
 $msg = $_REQUEST['msg'];
 
 $auth = 0;
 
-if (isset($_SESSION['isAdmin']) && $_SESSION['isAdmin'] == true){
+if ((isset($_SESSION['isAdmin']) && $_SESSION['isAdmin'] == true)){
 	$auth = 1;
-} 
+	$_SESSION['isAdmin'] = false;
+}
 
 require_once '../includes/dbconnect.php';
 
