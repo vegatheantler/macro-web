@@ -5,9 +5,9 @@ require ('../includes/dbconnect.php');
 
 
 /************ set values ***********/
-$involvedPartyQuantity = $_POST['involvedParty'];
-$involvedVehicleQuantity = $_POST['involvedVehicle'];
-$evidenceUploadedQuantity = $_POST['evidenceUploaded'];
+$involvedPartyQuantity = mysqli_escape_string($conn,$_POST['involvedParty']);
+$involvedVehicleQuantity = mysqli_escape_string($conn,$_POST['involvedVehicle']);
+$evidenceUploadedQuantity = mysqli_escape_string($conn,$_POST['evidenceUploaded']);
 
 $sql_str = "";
 
@@ -281,7 +281,7 @@ function processSqlString($fields,$quantity,$last_id_temp,$tableName){
 	if ($tableName=='reports'){
 		foreach ($fields as $field) {
 			if (isset($_POST[$field]) && $_POST[$field]!="") {
-				$$field = $_POST[$field];
+				$$field = mysqli_escape_string($conn,$_POST[$field]);
 				$values_str .= "'" . $$field. "',";
 				$columns_str .= "$field,";
 			}
@@ -293,11 +293,11 @@ function processSqlString($fields,$quantity,$last_id_temp,$tableName){
 		for ($i=0 ; $i<=$quantity ; $i++){
 			foreach ($fields as $field) {
 				if ((is_array($_POST[$field])) && isset($_POST[$field][$i])) {
-					$$field = $_POST[$field][$i];
+					$$field = mysqli_escape_string($conn,$_POST[$field][$i]);
 					$values_str .= " '". $$field. "' ,";
 					$columns_str .= " `".$field."`,";
 				} elseif (isset($_POST[$field])){
-					$$field = $_POST[$field];
+					$$field = mysqli_escape_string($conn,$_POST[$field]);
 					$values_str .= " '". $$field. "' ,";
 					$columns_str .= " `".$field."`,";
 				}
