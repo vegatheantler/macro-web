@@ -125,11 +125,7 @@ if(isset($_POST['submit-search'])){
 						<div class="col-xs-12 col-sm-6 col-md-3" id="lobo1">
 							<form class="form" method="POST" action="multistep.php">
 							<li>
-<<<<<<< HEAD
 							<a href="most-wanted-details.php?wantedID=<?php echo $row["wantedID"];?>"><img style="width: 200px; height: 100px;border-radius: 5px;" src="wantedImages/<?php echo $row["imgName"];?>" />
-=======
-							<a href="most-wanted-details.php?wantedID=<?php echo $row["wantedID"];?>""><img style="width: 200px; height: 100px;border-radius: 5px;" src="wantedImages/<?php echo $row["imgName"];?>" />
->>>>>>> 5ba43fd818a5bd87c377760425c850ec8ad8270a
 							<h4><?php echo ucfirst($row["firstName"]);?>" <?php echo ucfirst($row["lastName"]);?></h4></a>
 								<dl class="tags">
 									<dt>Crime Location:</dt>
