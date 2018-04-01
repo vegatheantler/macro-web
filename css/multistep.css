@@ -213,3 +213,10 @@ input[type="button"]:disabled, input[type="submit"]:disabled{
 }
 
 select:invalid { color: gray; }
+
+
+#contactphone::-webkit-inner-spin-button,
+#contactphone::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

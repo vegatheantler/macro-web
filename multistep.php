@@ -44,7 +44,7 @@ include_once 'navbar.html';
 <form id="msform" name="msform" method="post" action="functions/processreport.php" enctype="multipart/form-data">
 	<!-- progressbar -->
 	<div class="progressbar noHighlight" id="progs" >
-		<ul id="progressbar">
+		<ul id="progressbar" class="hidden-xs">
 			<li class="active">General</li>
 			<li>Involved Party</li>
 			<li>Involved Vehicle</li>
