@@ -1,11 +1,11 @@
-<?php
+<ul><?php
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 if (isset($_GET['id'])){
 	$reportID = $_GET['id'];
-} else 
-	$reportID = $_SESSION['reportID'];
+} else
+$reportID = $_SESSION['reportID'];
 
 
 require_once '../includes/dbconnect.php';
@@ -30,3 +30,4 @@ require_once '../includes/dbconnect.php';
 	}
 
 ?>﻿
+</ul>

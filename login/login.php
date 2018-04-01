@@ -11,8 +11,7 @@
 					<h4 class="form-signin-heading">Get started!</h4>Make a new report, tell us your story or hear from us. <p></p>
 
 					<div class="row col-sm-12" id="hbtnrow">
-                           <button type="button" class="btn btn-primary btn-lg" style="width:100%;background: white;color: #2F354F;border-color:#2F354F;border-width: 1.5px;"><b><span class="glyphicon glyphicon-envelope"> Reporting Forms</b></span></button>
-                        </div>
+          </div>
 
 
 				</form>

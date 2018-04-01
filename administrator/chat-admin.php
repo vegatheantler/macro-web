@@ -61,39 +61,12 @@ if (session_status() == PHP_SESSION_NONE) {
   <div class="container" id="main">
    <div class="row" id="welcome">
     <div  class="col-md-4 col-sm-4 leftside animated fadeInLeft">
-      <ul style="margin-top: 45%;">
-        <?php
-        require_once '../includes/dbconnect.php';
-        $result1 = mysqli_query($conn, "SELECT * from reports r INNER JOIN chatlogs c ON r.`reportID` = c.`reportID` GROUP BY r.`reportID` ORDER BY c.`date_sent` DESC");
-
-        $_SESSION['isAdmin'] = true;
-
-        while ($extract = mysqli_fetch_array($result1))
-        {
-
-
-          echo "<li style='width:200px;'><button style='width: 100%;' id='chats". $extract['reportID'] ."' value='". $extract['reportID'] . "'>";
-
-          $formattedTime = "<sup style='color:gray;font-size:50%;'>" . $extract['date_sent'] . "</sup>";
-          echo  $extract['reportID'] . " : " . $extract['message'] . " ".  $formattedTime . "<br /><hr>";
-
-          echo "</button></li>";
-
-          ?>
-          <script type="text/javascript">
-          $('#chats' + '<?php echo $extract["reportID"]; ?>').on('click', function(){
-              id = '<?php echo $extract['reportID']; ?>';
-
-              $("#chatlogs").load('../chat/logs.php?id='+ '<?php echo $extract['reportID']; ?>');
-              updateScroll();
-
-            });
-          </script>
-            <?php
-        }
-
-        ?>
-      </ul>
+      
+        <script type='text/javascript'>setInterval(function(){
+          $('#chat-inbox').load('../chat/inbox.php');
+        }, 2000);</script>
+      <div id="chat-inbox">
+      </div>
     </div>
     <div  class="col-md-8 col-sm-8 leftside animated fadeInLeft">
      <br><br><br><br>
