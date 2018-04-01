@@ -274,6 +274,7 @@ function generateRandomString($length) {
 
 
 function processSqlString($fields,$quantity,$last_id_temp,$tableName){
+  require ('../includes/dbconnect.php');
 	$sql_str_temp = "";
 	$columns_str = "";
 	$values_str =  "";
