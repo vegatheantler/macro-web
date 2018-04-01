@@ -126,7 +126,7 @@ if(isset($_POST['submit-search'])){
 							<form class="form" method="POST" action="multistep.php">
 							<li>
 							<a href="most-wanted-details.php?wantedID=<?php echo $row["wantedID"];?>"><img style="width: 200px; height: 100px;border-radius: 5px;" src="wantedImages/<?php echo $row["imgName"];?>" />
-							<h4><?php echo ucfirst($row["firstName"]);?>" <?php echo ucfirst($row["lastName"]);?></h4></a>
+							<h4><?php echo ucfirst($row["firstName"]);?> <?php echo ucfirst($row["lastName"]);?></h4></a>
 								<dl class="tags">
 									<dt>Crime Location:</dt>
 									<dd><?php echo $row["crimeLocation"];?>, Manila</dd>
