@@ -299,3 +299,7 @@ $("#datepicker").datepicker({
     viewMode: "years",
     minViewMode: "years"
 });
+function agreement() {
+		var x = document.getElementById("agreement").required;
+		document.getElementById("agreement").innerHTML = x;
+	}

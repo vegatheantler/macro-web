@@ -99,7 +99,7 @@ include_once 'navbar.html';
 	</fieldset>
 	<fieldset>
 		<h2 class="fs-title">Involved Parties</h2>
-		<h3 class="fs-subtitle">(OPTIONAL)</h3><h3 class="fs-subtitle"><label for="quantityParty">Number of Involved Person/s: </label><input type="number" min='1' id="quantityParty" name="quantityParty" class="col-xs-12" value=0></h3>
+		<h3 class="fs-subtitle">(OPTIONAL)</h3><h3 class="fs-subtitle"><label for="quantityParty">Number of Involved Person/s: </label><input type="number" min='0' id="quantityParty" name="quantityParty" class="col-xs-12" value=0></h3>
 		<div class="duplicates">
 			<div id="party0" class="hidden" name ="party0">
 			<hr>
@@ -146,7 +146,7 @@ include_once 'navbar.html';
 	<fieldset>
 		<h2 class="fs-title">Vehicle</h2>
 		<h3 class="fs-subtitle">(OPTIONAL)</h3>
-		<h3 class="fs-subtitle"><label for="quantityVehicle">Number of Involved Vehicle/s: </label><input type="number" min='1' id="quantityVehicle" class="col-xs-12" name="quantityVehicle" value=0></h3>
+		<h3 class="fs-subtitle"><label for="quantityVehicle">Number of Involved Vehicle/s: </label><input type="number" min='0' id="quantityVehicle" class="col-xs-12" name="quantityVehicle" value=0></h3>
 		<div class="duplicates">
 			<div id="vehicle0" class = "hidden" name="vehicle0">
 				<hr>
@@ -164,7 +164,7 @@ include_once 'navbar.html';
 	<fieldset>
 		<h2 class="fs-title">Evidence</h2>
 		<h3 class="fs-subtitle">(OPTIONAL)</h3>
-		<h3 class="fs-subtitle"><label for="quantityEvidence">Number of Evidence/s: </label><input type="number" min='1' id="quantityEvidence" class="col-xs-12" name="quantityEvidence" value=0 ></h3>
+		<h3 class="fs-subtitle"><label for="quantityEvidence">Number of Evidence/s: </label><input type="number" min='0' id="quantityEvidence" class="col-xs-12" name="quantityEvidence" value=0 ></h3>
 		<h3 class="fs-subtitle"><p>If you have a digital photograph that's relevant to this report (for example, a photo taken with your phone) you can upload it here. Please ensure the image is in .jpg or .jpeg format and that it’s no bigger than 2 MB in size.</p><br>
 <p>Files must be less than <strong>20 MB</strong><br>Allowed file types: <strong>MP3, MP4, JPG, JPEG, PNG & GIF</strong></p></h3>
 		<div class="duplicates">
