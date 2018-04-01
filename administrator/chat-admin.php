@@ -16,6 +16,7 @@
 
 <link href="../css/bootstrap-glyphicons.css" rel="stylesheet">
 <link rel="stylesheet" href="../css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/chat-admin.css">
 
 <!-- Custom CSS -->
 <link href="../css/styles.css" rel="stylesheet">
@@ -39,7 +40,7 @@
   <title>chatbox</title>
 
 </head>
-<body>
+<body style="overflow:hidden;">
   <?php
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
@@ -60,7 +61,7 @@ if (session_status() == PHP_SESSION_NONE) {
   </script>
   <div class="container" id="main">
    <div class="row" id="welcome">
-    <div  class="col-md-4 col-sm-4 leftside animated fadeInLeft">
+    <div  class="col-md-4 col-sm-4 leftside animated fadeInLeft" style="padding-top:7%;max-height:600px;min-height: 635px;overflow:auto;border-right: solid ; margin:none;">
 
         <script type='text/javascript'>setInterval(function(){
           $('#chat-inbox').load('../chat/inbox.php');
@@ -72,7 +73,7 @@ if (session_status() == PHP_SESSION_NONE) {
      <br><br><br><br>
      <div class="leftside jumbotron well" id="chatbox">
       <?php if (true) { ?>
-      <div id="chatArea">
+      <div id="chatArea ">
        <div class="container">
          <div class="row">
            <div class = " well">
@@ -154,6 +155,17 @@ $(document).ready (function(){
 
 
 });
+</script>
+<script language="javascript" type="text/javascript">
+  document.oncontextmenu=RightMouseDown;
+  document.onmousedown = mouseDown;
+
+  function mouseDown(e) {
+      if (e.which==3) {//righClick
+      alert("Disabled - do whatever you like here..");
+   }
+}
+function RightMouseDown() { return false;}
 </script>
 
 
