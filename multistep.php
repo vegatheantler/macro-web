@@ -90,7 +90,7 @@ include_once 'navbar.html';
 			<option value="Theft">Theft</option>
 			<option value="Vehicle crime">Vehicle crime</option>
 		</select>
-		<span class="tooltipContainer"><input id="dateTimeOfOffense" class ="col-xs-12 col-sm-6" type="text"  name="dateTimeOfOffense" placeholder="Date and Time" required/><span class="tooltiptext">Or your approximate guess of the time and date of the crime.</span></span>
+		<span class="tooltipContainer"><input id="dateTimeOfOffense" class ="col-xs-12 col-sm-6" type="text"  name="dateTimeOfOffense" placeholder="Date" required/><span class="tooltiptext">Or your approximate guess of the time and date of the crime.</span></span>
 		<span class="tooltipContainer"><input id="cityOfOffense" class="col-xs-12 col-sm-4" type="text" name="cityOfOffense" disabled="true" required value="Manila" /> <span class="tooltiptext">The city or district the crime took place.</span></span>
 		<span class="tooltipContainer"><input id="barangayOfOffense" class="col-xs-12 col-sm-4" type="text"  name="barangayOfOffense" placeholder="Barangay"/><span class="tooltiptext">Optional</span></span>
 		<span class="tooltipContainer"><input id="streetAddressOfOffense" class="col-xs-12 col-sm-4" name="streetAddressOfOffense" type="text"   placeholder="Street"/><span class="tooltiptext">Optional</span></span>
