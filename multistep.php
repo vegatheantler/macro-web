@@ -1,4 +1,10 @@
 <?php
+include_once 'functions/browserchecker.php';
+?>
+<?php
+include_once 'functions/browserchecker.php';
+?>
+<?php
 if (isset($_POST['wantedID']) && isset($_POST['wantedName'])){
 	$wantedID = $_POST['wantedID'];
 	$wantedName = $_POST['wantedName'];

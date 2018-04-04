@@ -1,3 +1,6 @@
+<?php
+include_once 'functions/browserchecker.php';
+?>
 <?php include 'includes/dbconnect.php'?>
 <!DOCTYPE html>
 <html>

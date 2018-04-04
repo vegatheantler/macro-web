@@ -1,3 +1,6 @@
+<?php
+include_once 'functions/browserchecker.php';
+?>
 <?php require 'includes/dbconnect.php';
 
 if (isset($_GET['page'])) {

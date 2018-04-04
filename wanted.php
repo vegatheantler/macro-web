@@ -1,3 +1,6 @@
+<?php
+include_once 'functions/browserchecker.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
