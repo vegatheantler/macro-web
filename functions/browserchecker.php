@@ -17,7 +17,7 @@ function get_browser_name($user_agent)
 $pogi = get_browser_name($_SERVER['HTTP_USER_AGENT']);
 
 
-if ($pogi != "Chrome" || $pogi != "Firefox"){
+if ($pogi == "Internet Explorer" || $pogi == "Opera" || $pogi == "Edge" || $pogi == "Safari"){
   ?>
 <style media="screen">
 body {
