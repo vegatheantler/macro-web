@@ -8,4 +8,5 @@ do
 	git pull
   echo "Update Success...."
   sleep 5
+  clear
 done
