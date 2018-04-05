@@ -250,7 +250,7 @@ modal css
    margin-top: 80px;
 }
 .modal-backdrop.fade.in{
-z-index: 0;
+z-index: 5;
 }
 .modal.fade.in .modal-dialog {
     margin-top: 8%;}
