@@ -22,6 +22,7 @@
 <link href="../css/styles.css" rel="stylesheet">
 <link href="../css/animate.css" rel="stylesheet">
 <link href="../css/normalize.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
 
 <script src="../js/jquery-3.2.1.min.js"></script>
 <!-- Include Modernizr in the head, before any other Javascript -->
@@ -61,7 +62,7 @@ if (session_status() == PHP_SESSION_NONE) {
   </script>
   <div class="container" id="main">
    <div class="row" id="welcome">
-    <div  class="col-md-4 col-sm-4 leftside animated fadeInLeft" style="padding-top:7%;max-height:600px;min-height: 635px;overflow:auto;border-right: solid ; margin:none;">
+    <div  class="col-md-4 col-sm-4 leftside animated fadeInLeft" style="padding-top:7%;max-height:600px;min-height: 350px;overflow:auto;border-right: solid ; margin:none;">
 
         <script type='text/javascript'>setInterval(function(){
           $('#chat-inbox').load('../chat/inbox.php');
