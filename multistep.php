@@ -136,7 +136,7 @@ include_once 'navbar.html';
 				</select>
 				<input type="text" class="col-xs-12 col-sm-6 col-md-3" name="susFacialhair[]" placeholder="Facial Hair" />
 				<input type="text" class="col-xs-12 col-sm-6 col-md-3" name="susEyecolor[]" placeholder="Eye Color" />
-				<input type="number" class="col-xs-12 col-sm-6 col-md-4" name="susNumber[]" min="5" max="11" placeholder="Suspect's Phone #" />
+				<input type="number" class="col-xs-12 col-sm-6 col-md-4" name="susNumber[]" placeholder="Suspect's Phone #" />
 				<input type="number" class="col-xs-12 col-sm-6 col-md-4" name="susAge[]" placeholder="Age (Approx.)" />
 				<input type="text" class="col-xs-12  col-md-4" name="susLastSeen[]" placeholder="Last Seen Area" />
 				<input type="text" class="col-xs-12 col-sm-12" name="susScars[]" placeholder="Scars, Marks, etc.." />
