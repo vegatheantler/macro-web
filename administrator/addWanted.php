@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <title></title>
   </head>
-  <body>
-    <form action="functions/addWantedFunc.php" method="POST" enctype="multipart/form-data"><br>
+  <body style="overflow-x: hidden;">
+
     <div class="container">
-      <div class="row">
+      <div class="row" style="margin-right: -50px;">
+        <form action="functions/addWantedFunc.php" style="padding-left:20px;" method="POST" enctype="multipart/form-data"><br>
         <div class="col-xs-5"><input type="text" class="form-control"  name="fname" placeholder="First Name" required></div>
         <div class="col-xs-5"><input type="text" class="form-control"  name="lname" placeholder="Last Name" required></div>
         <div class="col-xs-5"><input type="text" class="form-control"  name="criminalcase" placeholder="Criminal Case" required></div>
@@ -55,8 +56,9 @@
       <div class="col-xs-10">  <input type="file" class="form-control" name="file" ></div>
       <div class="col-xs-10"><button type="submit" class="btn btn-primary btn-lg btn-block" name="submit">Save</button></div>
       </div>
-    </div>
     </form>
+    </div>
+
 
 
 
