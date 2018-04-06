@@ -207,6 +207,7 @@ include_once 'functions/browserchecker.php';
 <!-- If no online access, fallback to our hardcoded version of jQuery -->
 <script>window.jQuery || document.write('<script src="js/jquery-1.8.2.min.js"><\/script>')</script>
 <!-- Custom JS -->
+<script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript">
 var Start;
 function myFunction(){

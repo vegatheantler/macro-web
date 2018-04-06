@@ -31,11 +31,6 @@ if(isset($_POST['submit-search'])){
 		<link rel="stylesheet" type="text/css" href="css/newwanted.css">
 		<link rel="stylesheet" type="text/css" href="css/search.css">
 		<link rel="stylesheet" type="text/css" href="css/navbar.css">
-		<style media="screen">
-			#searchlink{
-				display: none;
-			}
-		</style>
 	</head>
 	<body>
 		<?php require 'navbar.html' ?>
