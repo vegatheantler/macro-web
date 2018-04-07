@@ -53,9 +53,6 @@
   left: 50%;
   position: absolute;
 }
-.navbar{
-  border-bottom-right-radius: 35px;
-}
 .example-8 .navbar-brand>img {
   height: 100%;
   width: auto;
