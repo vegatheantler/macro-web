@@ -7,7 +7,7 @@ require_once '../includes/dbconnect.php';
 
         while ($extract = mysqli_fetch_array($result1))
         {
-          
+
 
           echo "<li><button id='chats". $extract['reportID'] ."' value='". $extract['reportID'] . "'style='border:none;border-radius:10px; margin-bottom:20px;min-height:70px;font-family:Georgia, serif;padding:0;text-decoration:none;max-width:180px;min-width:180px;overflow: auto;'> ";
 
@@ -34,7 +34,7 @@ require_once '../includes/dbconnect.php';
               $("#chatlogs").load('../chat/logs.php?id='+ '<?php echo $extract['reportID']; ?>');
               updateScroll();
               }, 2000);
-              <?php  
+              <?php
               $rep = $extract['reportID'];
               $result2 = mysqli_query($conn, "UPDATE chatlogs SET isRead=1 WHERE reportID=$rep");
               ?>
