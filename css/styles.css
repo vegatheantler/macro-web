@@ -22,6 +22,9 @@ position: absolute;
 
 }
    @media screen and (max-width:768px){
+     #search input[type="search"]{
+       font-size: 25px!important;
+     }
      .navbar{
       background-color: #2F354F;
       border-bottom-left-radius: 100px ;
