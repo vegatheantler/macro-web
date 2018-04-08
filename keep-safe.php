@@ -20,7 +20,7 @@ include_once 'functions/browserchecker.php';
   <h1 id="ks1">KEEP SAFE</h1>
 
   <div id="mySidenav" class="sidenav" style="align:left">
-    <a href="#" onclick="myFunction()" id="about"><i class="fa fa-mouse-pointer" style="font-size:28px"></i></a>
+        <a href="#" onclick="myFunction()" id="about"><i class="fa fa-mouse-pointer" style="font-size:28px"></i></a>
   </div>
 
 
