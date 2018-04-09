@@ -24,6 +24,8 @@ position: absolute;
    @media screen and (max-width:768px){
      #search input[type="search"]{
        font-size: 25px!important;
+       padding-left: 0!important;
+       padding-right: 0!important;
      }
      .navbar{
       background-color: #2F354F;
