@@ -40,7 +40,7 @@ if(isset($_POST['submit-search'])){
 					<div class="col-xs-12">
 						<h2 id="found"><?php echo $fullResult ?>  MACRO found for   <span class="glyphicon glyphicon-arrow-down"></span></h2>
 						<form action="search.php" method="POST">
-							<input id="inputSearch"placeholder="Search......" value="<?php echo $search ?>" name="search-big" required>
+							<input id="inputSearch"placeholder="Search......" value="<?php echo $search ?>" name="search-big"  required>
 							<input type="hidden" name="submit-search">
 						</form>
 					</div>
@@ -184,7 +184,7 @@ if(isset($_POST['submit-search'])){
 					<div id="search">
 						<button type="button" class="close">×</button>
 						<form action="search.php" method="POST">
-							<input type="search" value="" name="search-big" placeholder="type keyword(s) here" />
+							<input type="search" value="" name="search-big" placeholder="type keyword(s) here" id="searchplacehodertext" />
 							<button type="submit" name="submit-search" class="btn btn-primary">Search</button>
 						</form>
 					</div>

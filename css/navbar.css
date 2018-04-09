@@ -236,3 +236,7 @@ START OF LOADER//////////
 #content{
   display: none;
 }
+@media screen and (max-width:768px){
+  #search input[type="search"]{
+    font-size: 25px!important;
+  }}
