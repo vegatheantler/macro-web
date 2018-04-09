@@ -101,7 +101,7 @@ include_once 'navbar.html';
 		<span class="tooltipContainer"><input id="barangayOfOffense" class="col-xs-12 col-sm-4" type="text"  name="barangayOfOffense" placeholder="Barangay"/><span class="tooltiptext">Optional</span></span>
 		<span class="tooltipContainer"><input id="streetAddressOfOffense" class="col-xs-12 col-sm-4" name="streetAddressOfOffense" type="text"   placeholder="Street"/><span class="tooltiptext">Optional</span></span>
 		<span class="tooltipContainer"><textarea rows="10" id="description" class="col-xs-12" type="text" name="description" placeholder="Description" required/></textarea><span class="tooltiptext">Describe as detailed as possible the crime you want to report about including <b>who, what, when, where and how do you know</b>.</span></span>
-		<input type="button" name="next" id="genNext" class="col-xs-12" value="Next"	/>
+		<input type="button" name="next" id="genNext" class="btn btn-primary btn-block" value="Next"	/>
 	</fieldset>
 	<fieldset>
 		<h2 class="fs-title">Involved Parties</h2>
