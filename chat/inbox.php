@@ -7,12 +7,12 @@ require_once '../includes/dbconnect.php';
 
         while ($extract = mysqli_fetch_array($result1))
         {
-          
+
 
           echo "<li><button id='chats". $extract['reportID'] ."' value='". $extract['reportID'] . "' style='border:none;border-radius:10px; margin-bottom:20px;min-height:70px;font-family:Georgia, serif;padding:0;text-decoration:none;max-width:180px;min-width:180px;overflow: auto;'>";
 
           $formattedTime = "<sup style='color:gray;font-size:50%;'>" . $extract['date_sent'] . "</sup>";
-          if ($extract['isRead'] == 0){
+          if ($extract['isRead'] == 0 AND $extract['isAdmin'] == 0){
             echo "<b>";
             echo  $extract['reportID'] . " : " . $extract['message'] . " ".  $formattedTime . "<br /><hr>";
             echo "</b>";
@@ -43,7 +43,7 @@ require_once '../includes/dbconnect.php';
              });
 
 
-               
+
             });
           </script>
             <?php

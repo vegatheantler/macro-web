@@ -97,11 +97,11 @@ include_once 'navbar.html';
 			<option value="Vehicle crime">Vehicle crime</option>
 		</select>
 		<span class="tooltipContainer"><input id="dateTimeOfOffense" class ="col-xs-12 col-sm-6" type="text"  name="dateTimeOfOffense" placeholder="Date" required/><span class="tooltiptext">Or your approximate guess of the time and date of the crime.</span></span>
-		<span class="tooltipContainer"><input id="cityOfOffense" class="col-xs-12 col-sm-4" type="text" name="cityOfOffense" disabled="true" required value="Manila" /> <span class="tooltiptext">The city or district the crime took place.</span></span>
-		<span class="tooltipContainer"><input id="barangayOfOffense" class="col-xs-12 col-sm-4" type="text"  name="barangayOfOffense" placeholder="Barangay"/><span class="tooltiptext">Optional</span></span>
-		<span class="tooltipContainer"><input id="streetAddressOfOffense" class="col-xs-12 col-sm-4" name="streetAddressOfOffense" type="text"   placeholder="Street"/><span class="tooltiptext">Optional</span></span>
+		<span class="tooltipContainer"><input id="cityOfOffense" class="col-xs-12 col-md-12" type="text" name="cityOfOffense" disabled="true" required value="Manila" /> <span class="tooltiptext">The city or district the crime took place.</span></span>
+		<span class="tooltipContainer"><input id="barangayOfOffense" class="col-xs-12 col-md-6" type="text"  name="barangayOfOffense" placeholder="Barangay"/><span class="tooltiptext">Optional</span></span>
+		<span class="tooltipContainer"><input id="streetAddressOfOffense" class="col-xs-12 col-md-6" name="streetAddressOfOffense" type="text"   placeholder="Street"/><span class="tooltiptext">Optional</span></span>
 		<span class="tooltipContainer"><textarea rows="10" id="description" class="col-xs-12" type="text" name="description" placeholder="Description" required/></textarea><span class="tooltiptext">Describe as detailed as possible the crime you want to report about including <b>who, what, when, where and how do you know</b>.</span></span>
-		<input type="button" name="next" id="genNext" class="next action-button" value="Next"	/>
+		<input type="button" name="next" id="genNext" class="btn btn-primary btn-block" value="Next"	/>
 	</fieldset>
 	<fieldset>
 		<h2 class="fs-title">Involved Parties</h2>
@@ -136,9 +136,9 @@ include_once 'navbar.html';
 				</select>
 				<input type="text" class="col-xs-12 col-sm-6 col-md-3" name="susFacialhair[]" placeholder="Facial Hair" />
 				<input type="text" class="col-xs-12 col-sm-6 col-md-3" name="susEyecolor[]" placeholder="Eye Color" />
-				<input type="number" class="col-xs-12 col-sm-6 col-md-4" name="susNumber[]" placeholder="Suspect's Phone #" />
-				<input type="number" class="col-xs-12 col-sm-6 col-md-4" name="susAge[]" placeholder="Age (Approx.)" />
-				<input type="text" class="col-xs-12  col-md-4" name="susLastSeen[]" placeholder="Last Seen Area" />
+				<input type="number" class="col-xs-12 col-sm-6 col-md-12" name="susNumber[]" placeholder="Suspect's Phone #" />
+				<input type="number" class="col-xs-12 col-sm-6 col-md-6" name="susAge[]" placeholder="Age (Approx.)" />
+				<input type="text" class="col-xs-12  col-md-6" name="susLastSeen[]" placeholder="Last Seen Area" />
 				<input type="text" class="col-xs-12 col-sm-12" name="susScars[]" placeholder="Scars, Marks, etc.." />
 				<input type="text" class="col-xs-12 col-sm-12" name="susClothing[]" placeholder="Clothing" />
 				<textarea rows="5" class="col-xs-12" name="susFeatures[]" placeholder="Distinguishing Features (any other information about what the offender looks like)
@@ -146,8 +146,8 @@ include_once 'navbar.html';
 				<input type = "text" class="col-xs-12" name="susAssoc[]" placeholder="Gangs, assosiates, hangouts or animals"><br><br><br>
 			</div>
 		</div>
-		<input type="button" name="previous" class="previous action-button " value="Previous" />
-		<input type="button" name="next" class="next action-button " value="Next" />
+		<input type="button" name="previous" class="previous btn-block" value="Previous" id="previous" />
+		<input type="button" name="next" class="next btn-block" value="Next" id="genNext" />
 	</fieldset>
 	<fieldset>
 		<h2 class="fs-title">Vehicle</h2>
@@ -164,8 +164,8 @@ include_once 'navbar.html';
 				<textarea rows="5" name="carDesc[]" class="col-xs-12" placeholder="Description (any identifying marks, bumper stickers, company logos, etc.)"></textarea>
 			</div>
 		</div>
-		<input type="button" name="previous" class="previous action-button" value="Previous" />
-		<input type="button" name="next" class="next action-button" value="Next" />
+		<input type="button" name="previous" class="previous btn-block" value="Previous" id="previous" />
+		<input type="button" name="next" class="next btn-block" value="Next" id="genNext" />
 	</fieldset>
 	<fieldset>
 		<h2 class="fs-title">Evidence</h2>
@@ -178,8 +178,8 @@ include_once 'navbar.html';
 				<input name="evidence[]" accept=".jpg, .jpeg, .png, .gif, .mp3, .mp4" type="file" class="col-xs-12">
 			</div>
 		</div>
-		<input type="button" name="previous" class="previous action-button" value="Previous" />
-		<input type="button" name="next" class="next action-button" value="Next" />
+		<input type="button" name="previous" class="previous btn-block" value="Previous" id="previous" />
+		<input type="button" name="next" class="next btn-block" value="Next" id="genNext" />
 	</fieldset>
 	<fieldset>
 		<h2 class="fs-title">How to reach you?</h2>
@@ -201,8 +201,8 @@ The information you provide to us are anonymous. However, you must know that the
 		<input type="text" name="infBarangay[]" class="col-xs-12 col-sm-6 col-md-6" placeholder="Barangay" />
 		<input type="number" name="infNumber[]" class="col-xs-12 col-sm-6 col-md-6" id="contactphone" placeholder="Contact Phone" />
         <input type="text" id="email" name="infEmail[]" class="col-xs-12 col-sm-6 col-md-6"  placeholder="E-mail Address" >
-		<input type="button" name="previous" class="previous action-button" value="Previous" />
-		<input type="button" name="next" class="next action-button" value="Next" id="infbutton1" />
+				<input type="button" name="previous" class="previous btn-block" value="Previous" id="previous" />
+				<input type="button" name="next" class="next btn-block" value="Next" id="genNext" />
 	</fieldset>
 	<fieldset id="finalize">
 		<h2 class="fs-title">Agreement</h2>
@@ -215,8 +215,9 @@ The information you provide to us are anonymous. However, you must know that the
 
 
 </script>
+<div class="g-recaptcha" data-theme="light" data-sitekey="6LfphU8UAAAAAH8fDoAYvd8p3A0-CbHO3sTQ5aeY" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"></div> 
 <!-- uncomment below is your in macroph.ml -->
-<div class="g-recaptcha" data-callback="imNotARobot" data-sitekey="6LenUk8UAAAAAPUaz52v3sn-mh0ALAz_H91Tjbvk"></div></center><br>
+<!-- <div class="g-recaptcha" data-callback="imNotARobot" data-sitekey="6LenUk8UAAAAAPUaz52v3sn-mh0ALAz_H91Tjbvk"></div></center><br> -->
 <!-- uncomment below is your in localhost -->
 <!-- </script><div class="g-recaptcha" data-callback="imNotARobot" data-sitekey="6LfphU8UAAAAAH8fDoAYvd8p3A0-CbHO3sTQ5aeY"></div></center><br> -->
 
@@ -230,8 +231,8 @@ The information you provide to us are anonymous. However, you must know that the
 		<input type="hidden" id="evidenceUploaded" name="evidenceUploaded" value=0>
 		<input type="hidden" id="wantedID" name="wantedID" value=<?php echo htmlentities($wantedID);?>>
 		<input type="hidden" id="caseID" name="caseID" value=<?php echo htmlentities($caseID);?>>
-		<input type="button" name="previous" class="previous action-button" value="Previous" />
-		<input type="submit" id="submitForm" name="submit" 	class="submit2 action-button" value="Submit" />
+		<input type="button" name="previous" class="previous btn-block" value="Previous" id="previous" />
+		<input type="submit" id="submitForm" name="submit" 	class="btn btn-block" value="Submit" />
 	</fieldset>
 </form>
 </div>
