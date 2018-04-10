@@ -146,8 +146,9 @@ include_once 'navbar.html';
 				<input type = "text" class="col-xs-12" name="susAssoc[]" placeholder="Gangs, assosiates, hangouts or animals"><br><br><br>
 			</div>
 		</div>
-		<input type="button" name="previous" class="previous btn-block" value="Previous" id="previous" />
+
 		<input type="button" name="next" class="next btn-block" value="Next" id="genNext" />
+				<input type="button" name="previous" class="previous btn-block" value="Previous" id="previous" />
 	</fieldset>
 	<fieldset>
 		<h2 class="fs-title">Vehicle</h2>
@@ -164,8 +165,9 @@ include_once 'navbar.html';
 				<textarea rows="5" name="carDesc[]" class="col-xs-12" placeholder="Description (any identifying marks, bumper stickers, company logos, etc.)"></textarea>
 			</div>
 		</div>
+				<input type="button" name="next" class="next btn-block" value="Next" id="genNext" />
 		<input type="button" name="previous" class="previous btn-block" value="Previous" id="previous" />
-		<input type="button" name="next" class="next btn-block" value="Next" id="genNext" />
+
 	</fieldset>
 	<fieldset>
 		<h2 class="fs-title">Evidence</h2>
@@ -201,8 +203,9 @@ The information you provide to us are anonymous. However, you must know that the
 		<input type="text" name="infBarangay[]" class="col-xs-12 col-sm-6 col-md-6" placeholder="Barangay" />
 		<input type="number" name="infNumber[]" class="col-xs-12 col-sm-6 col-md-6" id="contactphone" placeholder="Contact Phone" />
         <input type="text" id="email" name="infEmail[]" class="col-xs-12 col-sm-6 col-md-6"  placeholder="E-mail Address" >
-				<input type="button" name="previous" class="previous btn-block" value="Previous" id="previous" />
 				<input type="button" name="next" class="next btn-block" value="Next" id="genNext" />
+				<input type="button" name="previous" class="previous btn-block" value="Previous" id="previous" />
+
 	</fieldset>
 	<fieldset id="finalize">
 		<h2 class="fs-title">Agreement</h2>
@@ -230,8 +233,9 @@ The information you provide to us are anonymous. However, you must know that the
 		<input type="hidden" id="involvedVehicle" name="involvedVehicle" value=0>
 		<input type="hidden" id="evidenceUploaded" name="evidenceUploaded" value=0>
 		<input type="hidden" id="wantedID" name="wantedID" value=<?php echo htmlentities($wantedID);?>>
+<input type="submit" id="submitForm" name="submit" 	class="btn btn-block" value="Submit" />
 		<input type="button" name="previous" class="previous btn-block" value="Previous" id="previous" />
-		<input type="submit" id="submitForm" name="submit" 	class="btn btn-block" value="Submit" />
+
 	</fieldset>
 </form>
 </div>
