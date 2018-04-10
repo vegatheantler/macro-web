@@ -145,7 +145,7 @@ if(isset($_POST['submit-search'])){
 						<div class="container" id="noresult">
 							<div class="row">
 								<div class="col-sm-12">
-									<h1 id="noresult"><span class="glyphicon glyphicon-eye-close"></span> MACRO NO RESULT, TRY A NEW KEYWORD</h1>
+									<h1 id="noresult"><span class="glyphicon glyphicon-eye-close"></span> MACRO NO RESULT CRIMINALS, TRY A NEW KEYWORD</h1>
 									<script type="text/javascript">
 									document.getElementById("found2").style.display = "none";
 									document.getElementById("found1").style.display = "none";
