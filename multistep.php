@@ -180,8 +180,9 @@ include_once 'navbar.html';
 				<input name="evidence[]" accept=".jpg, .jpeg, .png, .gif, .mp3, .mp4" type="file" class="col-xs-12">
 			</div>
 		</div>
-		<input type="button" name="previous" class="previous btn-block" value="Previous" id="previous" />
+
 		<input type="button" name="next" class="next btn-block" value="Next" id="genNext" />
+		<input type="button" name="previous" class="previous btn-block" value="Previous" id="previous" />
 	</fieldset>
 	<fieldset>
 		<h2 class="fs-title">How to reach you?</h2>
