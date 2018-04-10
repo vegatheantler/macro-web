@@ -62,7 +62,7 @@ if (session_status() == PHP_SESSION_NONE) {
   </script>
   <div class="container" id="main">
    <div class="row" id="welcome">
-    <div  class="col-md-4 col-sm-4 leftside animated fadeInLeft" style="padding-top:7%;max-height:620px;min-height: 350px;overflow:auto;border-right: solid ; margin:none;">
+    <div  id="chat123" class="col-md-4 col-sm-4 leftside animated fadeInLeft" style="padding-top:7%;max-height:620px;min-height: 350px;overflow:auto; margin:none;">
 
         <script type='text/javascript'>setInterval(function(){
           $('#chat-inbox').load('../chat/inbox.php');
