@@ -215,7 +215,7 @@ The information you provide to us are anonymous. However, you must know that the
 
 
 </script>
-<div class="g-recaptcha" data-theme="light" data-sitekey="6LenUk8UAAAAAPUaz52v3sn-mh0ALAz_H91Tjbvk" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"></div> 
+<div class="g-recaptcha" data-theme="light" data-sitekey="6LenUk8UAAAAAPUaz52v3sn-mh0ALAz_H91Tjbvk" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
 <!-- uncomment below is your in macroph.ml -->
 <!-- <div class="g-recaptcha" data-callback="imNotARobot" data-sitekey="6LenUk8UAAAAAPUaz52v3sn-mh0ALAz_H91Tjbvk"></div></center><br> -->
 <!-- uncomment below is your in localhost -->
@@ -230,7 +230,6 @@ The information you provide to us are anonymous. However, you must know that the
 		<input type="hidden" id="involvedVehicle" name="involvedVehicle" value=0>
 		<input type="hidden" id="evidenceUploaded" name="evidenceUploaded" value=0>
 		<input type="hidden" id="wantedID" name="wantedID" value=<?php echo htmlentities($wantedID);?>>
-		<input type="hidden" id="caseID" name="caseID" value=<?php echo htmlentities($caseID);?>>
 		<input type="button" name="previous" class="previous btn-block" value="Previous" id="previous" />
 		<input type="submit" id="submitForm" name="submit" 	class="btn btn-block" value="Submit" />
 	</fieldset>
