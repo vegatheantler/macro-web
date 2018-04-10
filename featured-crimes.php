@@ -48,7 +48,7 @@ if ($result->num_rows > 0) {
             <h4 class="animated fadeIn">CASE# <?php echo $row["casenumber"]; ?></h4>
             <p class="animated fadeIn"><?php echo $row["description"] ?></p>
             <br>
-            <input type="hidden" name="caseID" value="<?php echo $row["caseID"] ?>">
+            
             <center><input type="submit" value="GIVE US TIPS" class="btn btn-info" href="#"></center>
             <br><br>
         </div>
