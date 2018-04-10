@@ -328,11 +328,11 @@ $('#contactphone').keyup(function() {
         $('#infbutton1').prop('disabled', false);
 	}
 });
-$("#datepicker").datepicker({
-    format: "yyyy",
-    viewMode: "years",
-    minViewMode: "years"
-});
+// $("#datepicker").datepicker({
+//     format: "yyyy",
+//     viewMode: "years",
+//     minViewMode: "years"
+// });
 function agreement() {
 		var x = document.getElementById("agreement").required;
 		document.getElementById("agreement").innerHTML = x;
